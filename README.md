@@ -1,4 +1,4 @@
-# Proyecto BIBLIOTECH
+![Logo](/images/LOGOTIPO-PEQUENO.png) 
 
 ## Desarrollo de software - Ciclo 3 MISIONTIC
 
