@@ -10,11 +10,11 @@ Este recurso nace de la unión de varios saberes y voluntades.
 
 Equipo de desarrollo:
 
-* Andrés Felipe
-* Esteban
-* Luis Fernando
-* Kelly
-* John Stiven
+* Andrés Felipe Alvarez
+* Esteban Castiblanco
+* Luis Fernando Delgado
+* Kelly Monroy
+* John Stiven Vasquez
 
 > Buenas lecturas :)
 
