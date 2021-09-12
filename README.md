@@ -14,7 +14,7 @@ Equipo de desarrollo:
 * Esteban Castiblanco
 * [Luis Fernando Delgado](https://github.com/lufermaxi)
 * Kelly Monroy
-* John Stiven Vasquez
+* [John Stiven Vasquez](https://github.com/jsstiven)
 > Buenas lecturas :)
 
 
