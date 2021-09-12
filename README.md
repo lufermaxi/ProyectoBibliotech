@@ -10,12 +10,11 @@ Este recurso nace de la unión de varios saberes y voluntades.
 
 Equipo de desarrollo:
 
-* Andrés Felipe Alvarez
+* [Andrés Felipe Alvarez](https://github.com/afar-cmyk)
 * Esteban Castiblanco
 * Luis Fernando Delgado
 * Kelly Monroy
 * John Stiven Vasquez
-
 > Buenas lecturas :)
 
 
