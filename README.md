@@ -9,11 +9,10 @@ Este repositorio alojará el desarrollo de un servicio Web de prestamos para peq
 Este recurso nace de la unión de varios saberes y voluntades.
 
 Equipo de desarrollo:
-
 * [Andrés Felipe Alvarez](https://github.com/afar-cmyk)
 * Esteban Castiblanco
 * [Luis Fernando Delgado](https://github.com/lufermaxi)
-* Kelly Monroy
+* [Kelly Monroy Carrillo](https://github.com/muakarada)
 * [John Stiven Vasquez](https://github.com/jsstiven)
 > Buenas lecturas :)
 
