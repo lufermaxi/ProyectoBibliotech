@@ -12,7 +12,7 @@ Equipo de desarrollo:
 
 * [Andrés Felipe Alvarez](https://github.com/afar-cmyk)
 * Esteban Castiblanco
-* Luis Fernando Delgado
+* [Luis Fernando Delgado](https://github.com/lufermaxi)
 * Kelly Monroy
 * John Stiven Vasquez
 > Buenas lecturas :)
