@@ -1,0 +1,20 @@
+.equipo-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.equipo-info__imagen {
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.equipo-info__imagen2 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.equipo-section {
+    display: flex;
+    margin-bottom: 100px;
+}
