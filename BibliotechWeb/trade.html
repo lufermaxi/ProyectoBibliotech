@@ -1,25 +1,169 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Link a css: Normalize (inicializar estilos)
+        Link style-index(página web)
+        Link favicon
+        Link a fonts: Work Sans
+        Link a fonts: Roboto
+    -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style-trade.css">
+    <link rel="shortcut icon" href="assets/icons/favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;700;900&display=swap" rel="stylesheet">
+    <title>Bibliotech - préstamo</title>
 </head>
 <body>
-    <main>
-        <!--Inicio de la página de préstamo---------------------------------------------------------------->
+    <!--Inicio de encabezado de página-->
+    <header id="index" class="header-section">
+        <!--Contenedor de encabezado-->
+        <div class="header-container">
+            <!--Inicio con logo de Bibliotech-->
+            <div class="logo">
+                   <a href="index.html">
+                <img src="assets/images/LOGOTIPO-MINIMO-04.png" alt="Logo de bibliotech">
+               </a> 
+            </div>
+            <!--Barra de navegación-->
+            <div class="nav-bar">
+                <a href="#trade">Préstamo</a>
+                <a href="about.html">Acerca de</a>
+                <a href="team.html">Equipo</a>
+            </div>
+            <div class="login-bar">
+                <a href="login.html">Log In</a>
+            </div>
+        </div>
+    </header>
+    <!--Fin de encabezado de página-->
+    <main class="main-section">
+        <!--Inicio de la página de préstamo-->
         <section id= "trade" class="trade-section">
+            <!--Inicio sección de saludo-->
             <div class="lineTrade-container">
                 <h1>¡Bienvenido</h1>
                 <h3>a nuestro sistema bibliotecario</h3>
             </div>
-
+        </section>
+        <section class="box-section">
+            <!--Inicio sección caja de búsqueda de libros-->
             <div class="box-search">
-
+                <form action=""> <!--Aún no se especifica-->
+                    <p class="search-text">Búsqueda de artículos: 
+                        <input class="box" type="search" name="booksFormats" list="booksList">
+                        <input class="button" type="submit" value="Buscar">
+                    </p>
+                </form>
+                <datalist id="booksList">
+                    <option value="Digitales"></option>
+                    <option value="Ilustración"></option>
+                    <option value="Manuales"></option>
+                    <option value="Revistas"></option>
+                    <option value="Académicos"></option>
+                </datalist>
             </div>
-
+        </section>
+        <!--Inicio de galería de libros-->
+        <section class="books-section">
+            <!--Fila una de libros-->
+            <div class="row-books">
+                <ul class="row-1">
+                    <li class="book-one">
+                        <!--Este link abrirá la ventana modal con la solicitud del libro-->
+                        <a href="#view-one">
+                            <img src="assets/images/illustrated/book-three.png" alt="castillos" srcset="">
+                        </a>
+                        <!--Ventana modal-->
+                        <div id="view-one" class="modal">
+                            <div class="modal-view">
+                                <a href="#">Regresar</a>
+                                <div class="info-book">
+                                    <figure>
+                                        <img src="assets/images/illustrated/book-three.png" alt="" srcset="">
+                                    </figure>
+                                    <p>Formato: Ilustración <br>Los cuentos como son
+                                        <br>Rudyard Kipling <br>2021 <br>Alfaguara IJ
+                                        <br>ISBN 978-84-204-5665-2
+                                        <br><b>Disponible</b>
+                                    </p>
+                                </div>
+                                <div class="book-btn">
+                                    <!--Queda por crear la ventana modal del formulario de datos del cliente-->
+                                    <button class="btn-one"> <a href="#form-user">Solicitar</a></button> 
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--Queda por formatear estos datos-->
+                    <li class="book-two">
+                        <a href="#view-two"></a>
+                        <figure>
+                            <img src="assets/images/illustrated/book-two.png" alt="" srcset="">
+                        </figure>
+                    </li>
+                    <li class="book-three">
+                        <a href="#view-three"></a>
+                        <figure>
+                            <img src="assets/images/illustrated/book-one.png" alt="" srcset="">
+                        </figure>
+                    </li>
+                    <li class="book-four">
+                        <a href="#view-four"></a>
+                        <figure>
+                            <img src="assets/images/illustrated/book-four.png" alt="" srcset="">
+                        </figure>
+                    </li>
+                    <li class="book-five">
+                        <a href="#view-five"></a>
+                        <figure>
+                            <img src="assets/images/illustrated/book-five.png" alt="">
+                        </figure>
+                    </li>
+                    <li class="book-six">
+                        <a href="#view-six"></a>
+                        <figure>
+                            <img src="assets/images/illustrated/book-six.png" alt="">
+                        </figure>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
+
+    <footer class="footer-section">
+        <!--Inicio del contenido del footer-->
+        <div class="blue-1"> <!--Clase para diseño de colores: azul-->
+            <div class="logo-foot">
+                <img src="assets/images/white-logo.png" alt="Logo del footer" srcset="">
+            </div>
+            <!--Info de creación-->
+            <div class="info-foot">
+                <h6>© Bibliotech 2021</h6>
+                <h6>Contáctanos: </h6>
+            </div>
+            <!--Lista de navegación de footer-->
+            <div class="nav-foot">
+                <ul>
+                    <li><a href="#index">Inicio</a></li>
+                    <li><a href="">Préstamo</a></li>
+                    <li><a href="">Acerca de</a></li>
+                    <li><a href="">Equipo</a></li>
+                    <li><a href="">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Clases para diseño de colores de fondo de footer: naranjas-->
+        <div class="orange-2"></div>
+        <div class="orange-3"></div>
+        <div class="orange-4"></div>
+    </footer>
 </body>
 </html>
