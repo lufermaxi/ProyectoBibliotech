@@ -1,0 +1,41 @@
+/*Reglas de color según identidad de marca
+Colores principales: 
+-Naranja: #ff3000 RGB 255 48 0
+-Azul: #003582 RGB 0 53 130
+
+Colores secundarios:
+-Naranja claro: #ff6c38 RGB 255 108 56
+-Naranja rojo: #c30000 RGB 195 0 0
+
+-Azul claro: #485eb2 RGB 72 94 178
+-Azul oscuro: #001154 RGB 0 17 84
+
+Variaciones de transparencia:
+
+*/
+
+.lineTrade-container{
+    width: 100%;
+    height: 80px;
+    margin-top: 8%;
+    background-color: #003582;
+    text-align: center;
+}
+
+
+.lineTrade-container h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFF;
+    margin: 0.3%;
+    padding-top: 2%;
+}
+
+.lineTrade-container h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFF;
+    margin: 0%;
+}
