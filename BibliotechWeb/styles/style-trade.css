@@ -14,12 +14,58 @@ Variaciones de transparencia:
 
 */
 
+/*Área de encabezado*/
+
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+
+}
+.nav-bar{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.login-bar{
+    width: 10%;
+    background-color: #485eb2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 8px solid #001154;
+    border-left: 8px solid #001154;
+}
+
+.login-bar>a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFF;
+
+}
+.nav-bar>a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ff3000;
+}
+/*Fin de área de encabezado*/
+
+/*Área de línea de título*/
 .lineTrade-container{
     width: 100%;
     height: 80px;
-    margin-top: 8%;
     background-color: #003582;
     text-align: center;
+    margin-top: -0.4%;
 }
 
 
@@ -38,4 +84,201 @@ Variaciones de transparencia:
     font-size: 15px;
     color: #FFF;
     margin: 0%;
+    padding-bottom: 3%;
 }
+
+/*Área de caja de búsqueda*/
+
+.box-section{
+    display: block;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.search-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ff3000;
+}
+
+.box{
+    border: 1px solid #ff3000;
+}
+
+.button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background-color: #485eb2;
+    color: #FFF;
+    border: 5px solid #485eb2;
+}
+
+/*Área de fila de libros*/
+.row-books{
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.row-books ul{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.book-one{
+    width: 15%;
+}
+
+.book-two{
+    width: 15%;
+}
+
+.book-three{
+    width: 15%;
+}
+
+.book-four{
+    width: 15%;
+}
+
+.book-five{
+    width: 15%;
+}
+
+.book-six{
+    width: 15%;
+}
+
+/*Área de ventana modal*/
+.modal-view{
+    background-color: #87cacc;
+    width: 50%;
+    padding: 10px 20px;
+    margin: 12% auto;
+    position: relative;
+}
+
+.modal-view a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background-color: #485eb2;
+    color: #FFF;
+    text-decoration: none;
+    padding: 1%;
+}
+
+.modal{
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+#view-one:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*Área de info de libro en ventana modal*/
+
+.info-book{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.info-book p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.info-book p b{
+    color: #001154;
+}
+
+.book-btn{
+    display: block;
+    text-align: center;
+}
+
+.book-btn button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background-color: #485eb2;
+    color: #FFF;
+    border: 10px solid #485eb2;
+}
+
+/*Área de footer*/
+.footer-section{
+    margin-top: 5%;
+    display: flex;
+}
+
+.blue-1{
+    background-color: #003582;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.logo-foot{
+    margin-top: 5%;
+}
+
+.info-foot h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    color: #FFF;
+}
+
+
+.nav-foot{
+    display: inline-block;
+}
+
+.nav-foot ul li{
+    list-style: none;
+}
+
+.nav-foot a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-decoration: none;
+    color: #FFF;
+    
+}
+.orange-2{
+    background-color: #ff6c38;
+    width: 10%;
+}
+
+.orange-3{
+    background-color: #ff3000;
+    width: 10%;
+}
+
+.orange-4{
+    background-color: #c30000;
+    width: 10%;
+}
+
+/*Fin de área de footer*/
+
+
+
+
+
+
