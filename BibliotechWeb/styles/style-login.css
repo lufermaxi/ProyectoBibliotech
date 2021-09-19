@@ -12,22 +12,34 @@ body {
   position: fixed;
 }
 
-.caja-login {
-  background-color: #ffffff;
-  width: 40%;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  z-index: 2;
-  border-radius: 14px;
-  position: fixed;
-  box-shadow: 0px 1px #00000034;
-  box-shadow: 0px 2px #0000003b;
-  box-shadow: 0px 1px #00000065;
-}
-
 .contenedor-login {
   z-index: 2;
   display: flex;
   justify-content: center;
+  height: 927.5px;
+}
+
+.caja-login {
+  background-color: #ffffff;
+  z-index: 2;
+  border-radius: 14px;
+
+  /*display: flex;
+  justify-content: center;
+  flex-direction: column;
+  */
+
+  width: 40%;
+  height: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contenedor-logo {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
 }
