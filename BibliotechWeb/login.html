@@ -11,17 +11,107 @@
       href="assets/icons/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+    <!-- Material -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/BibliotechWeb/styles/login-estilosmaterial.css"
+    />
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!--Fuente Roboto-->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      type="text/css"
+    />
+
+    <!--Hoja local de estilos css-->
+    <link rel="stylesheet" href="styles/style-login.css" />
   </head>
 
-  <!-- 
-    enlazar bootstrap
-    imagen de fondo
-    poner un contenedor azul
-    contenedor del login -->
-
   <body>
-    <div class="img">
-    </div>
+    <!-- Capa de color azul que cubre a la imagen de fondo -->
+    <div class="recubrimiento"></div>
+
+    <!-- Contenedor central blanco -->
+    <main class="contenedor-login">
+      <!-- Contenedor de los elementos de Login -->
+      <div class="caja-login">
+        <!-- Contenedor del logo -->
+        <div class="contenedor-logo">
+          <img src="/BibliotechWeb/assets/images/LOGOTIPO-PEQUENO.png" alt="" />
+        </div>
+
+        <!-- Cajas de Texto -->
+        <div class="prueba-material">
+          <form action="#">
+            <!-- Nombre de usuario -->
+            <div
+              class="
+                mdl-textfield mdl-js-textfield
+                mdl-textfield--floating-label
+              "
+            >
+              <input class="mdl-textfield__input" type="text" id="sample3" />
+              <label class="mdl-textfield__label" for="sample3"
+                >Nombre de usuario</label
+              >
+            </div>
+
+            <br />
+
+            <!-- Contraseña -->
+            <div
+              class="
+                mdl-textfield mdl-js-textfield
+                mdl-textfield--floating-label
+              "
+            >
+              <input
+                class="mdl-textfield__input"
+                type="password"
+                id="sample3"
+              />
+              <label class="mdl-textfield__label" for="sample3"
+                >Contraseña</label
+              >
+            </div>
+
+            <br />
+
+            <div class="elementos-complementarios">
+              <div class="forgot">
+                <a href="">¿Olvidó su contraseña?</a>
+              </div>
+
+              <!-- Botón material (getmdl.io) -->
+              <div class="contenedor-boton">
+                <div class="boton-login">
+                  <!-- Accent-colored raised button with ripple -->
+                  <button
+                    class="
+                      mdl-button mdl-js-button
+                      mdl-button--raised
+                      mdl-js-ripple-effect
+                      mdl-button--accent
+                    "
+                  >
+                    Entrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
