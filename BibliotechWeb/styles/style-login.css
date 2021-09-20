@@ -137,3 +137,18 @@ color de la selecicon en el cuadro de input
 }
 
 */
+
+.cc-footer {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  align-self: flex-end;
+  padding-bottom: 20px;
+}
+
+.cc-footer p {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: #ffffff;
+}
