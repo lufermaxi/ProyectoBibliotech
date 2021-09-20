@@ -10,7 +10,7 @@ Este recurso nace de la unión de varios saberes y voluntades.
 
 <br/>
 
-**[bibliotech.biz/](bibliotech.biz)**
+**[bibliotech.biz/](http://bibliotech.biz/)**
 
 <br/>
 
