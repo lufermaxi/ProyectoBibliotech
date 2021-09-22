@@ -70,6 +70,14 @@ Variaciones de transparencia:
 }
 /*Fin de área de encabezado*/
 
+/*Área de línea de sepración*/
+.line-container{
+    width: 100%;
+    height: 20px;
+    background-color: #003582;
+    text-align: center;
+}
+
 /*Área de línea de título*/
 .lineTrade-container{
     width: 100%;
@@ -98,137 +106,53 @@ Variaciones de transparencia:
     padding-bottom: 3%;
 }
 
-/*Área de caja de búsqueda*/
 
-.box-section{
-    display: block;
-    text-align: center;
-    margin-top: 3%;
+/*Área de noticias*/
+
+.team-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.search-text{
+.row-team{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.photo-team{
+    background-color: indianred;
+}
+
+.info-team{
+    border: 2px solid salmon;
+}
+
+.info-team p{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-size: 18px;
+    text-align: center;
     color: #ff3000;
 }
 
-.box{
-    border: 1px solid #ff3000;
-}
-
-.button{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    background-color: #485eb2;
-    color: #FFF;
-    border: 5px solid #485eb2;
-}
-
-/*Área de fila de libros*/
-.row-books{
-    justify-content: center;
-    margin-top: 3%;
-}
-
-.row-books ul{
-    align-content: center;
+.row2-team{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
+    justify-content: space-around;
 }
 
-.book-one{
-    width: 15%;
+.news1-team{
+    background-color: lightsalmon;
 }
 
-.book-two{
-    width: 15%;
+.news2-team{
+    background-color: maroon;
 }
 
-.book-three{
-    width: 15%;
-}
-
-.book-four{
-    width: 15%;
-}
-
-.book-five{
-    width: 15%;
-}
-
-.book-six{
-    width: 15%;
-}
-
-/*Área de ventana modal*/
-.modal-view{
-    background-color: #87cacc;
-    width: 50%;
-    padding: 10px 20px;
-    margin: 12% auto;
-    position: relative;
-}
-
-.modal-view a{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    background-color: #485eb2;
-    color: #FFF;
-    text-decoration: none;
-    padding: 1%;
-}
-
-.modal{
-    background-color: rgba(255, 255, 255, 0.9);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 1s;
-}
-
-#view-one:target{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/*Área de info de libro en ventana modal*/
-
-.info-book{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-
-.info-book p{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: #FFF;
-}
-
-.info-book p b{
-    color: #001154;
-}
-
-.book-btn{
-    display: block;
-    text-align: center;
-}
-
-.book-btn button{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    background-color: #485eb2;
-    color: #FFF;
-    border: 10px solid #485eb2;
-}
 
 /*Área de footer*/
 
@@ -327,9 +251,3 @@ Variaciones de transparencia:
 }
 
 /*Fin de área de footer*/
-
-
-
-
-
-
