@@ -68,14 +68,42 @@ Variaciones de transparencia:
     text-decoration: none;
     color: #ff3000;
 }
+
+/*Efectos mouse*/
+.nav-bar>a:hover{
+    color: #ff6c38;
+}
+
+.login-bar>a:hover{
+    color: #003582;
+}
 /*Fin de área de encabezado*/
 
 /*Área de línea de sepración*/
 .line-container{
     width: 100%;
-    height: 20px;
+    height: 80px;
     background-color: #003582;
     text-align: center;
+    margin-top: -0.4%;
+}
+
+.line-container h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFF;
+    margin: 0.3%;
+    padding-top: 2%;
+}
+
+.line-container h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFF;
+    margin: 0%;
+    padding-bottom: 3%;
 }
 
 /*Área de banner de libros, saludo y redirección a préstamo*/
@@ -108,7 +136,10 @@ Variaciones de transparencia:
     font-size: 16px;
     text-decoration: none;
     color: #FFF;
+}
 
+.button-solitude a:hover{
+    color: #ff3000;
 }
 
 .banner-text h3{
@@ -190,6 +221,10 @@ Variaciones de transparencia:
     margin-right: 30px;
 }
 
+.icons-foot a:hover{
+    color: #001154;
+}
+
 .nav-foot{
     width: 20%;
     display: inline-block;
@@ -208,6 +243,10 @@ Variaciones de transparencia:
     font-size: 12px;
     text-decoration: none;
     color: #FFF;
+}
+
+.nav-foot a:hover{
+    color: #001154;
 }
 
 .orange-2{

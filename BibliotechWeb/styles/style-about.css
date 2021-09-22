@@ -14,6 +14,7 @@ Variaciones de transparencia:
 
 */
 
+
 /*Área de encabezado*/
 .header-section{
     display: flex;
@@ -68,6 +69,15 @@ Variaciones de transparencia:
     text-decoration: none;
     color: #ff3000;
 }
+
+/*Efectos mouse*/
+.nav-bar>a:hover{
+    color: #ff6c38;
+}
+
+.login-bar>a:hover{
+    color: #003582;
+}
 /*Fin de área de encabezado*/
 
 /*Área de línea de sepración*/
@@ -108,30 +118,60 @@ Variaciones de transparencia:
 
 
 /*Área de noticias*/
-
-.team-section{
+.news-section{
     width: 80%;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1%;
 }
 
-.row-team{
+/*Primera fila de noticias*/
+.row1-news{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    gap: 10px;
 }
 
-.photo-team{
-    background-color: indianred;
+.bibliotech-news{
+    position: relative;
+    margin-bottom: 15px;
 }
 
-.info-team{
-    border: 2px solid salmon;
+.photo-one{
+    filter: brightness(30%);
 }
 
-.info-team p{
+.btn-about{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    background-color: #485eb2;
+    border: 2px solid #485eb2;
+}
+
+.btn-about>a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*Efectos hover*/
+.photo-one:hover{
+    filter: none;
+}
+
+.info-news{
+    width: 500px;
+    margin-bottom: 15px;
+    padding: 68px;
+}
+
+.info-news p{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -139,18 +179,61 @@ Variaciones de transparencia:
     color: #ff3000;
 }
 
-.row2-team{
+/*Segunda fila de noticias*/
+
+.row2-news{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 10px;
 }
 
-.news1-team{
-    background-color: lightsalmon;
+.news1-news{
+    position: relative;
 }
 
-.news2-team{
-    background-color: maroon;
+.photo-two{
+    filter: brightness(30%);
+}
+
+.photo-two:hover{
+    filter: none;
+}
+
+.headline-news1{
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+.news2-news{
+    position: relative;
+}
+
+.photo-three{
+    filter: brightness(30%);
+}
+
+.photo-three:hover{
+    filter: none;
+}
+
+.headline-news2{
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
 }
 
 
@@ -215,6 +298,10 @@ Variaciones de transparencia:
     margin-right: 30px;
 }
 
+.icons-foot a:hover{
+    color: #001154;
+}
+
 .nav-foot{
     width: 20%;
     display: inline-block;
@@ -233,6 +320,10 @@ Variaciones de transparencia:
     font-size: 12px;
     text-decoration: none;
     color: #FFF;
+}
+
+.nav-foot a:hover{
+    color: #001154;
 }
 
 .orange-2{

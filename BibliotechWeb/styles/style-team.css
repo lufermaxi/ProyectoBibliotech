@@ -1,5 +1,5 @@
 
-/*Inicio de área de encabezado*/
+/*Área de encabezado*/
 .header-section{
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +53,17 @@
     text-decoration: none;
     color: #ff3000;
 }
+
+/*Efectos mouse*/
+.nav-bar>a:hover{
+    color: #ff6c38;
+}
+
+.login-bar>a:hover{
+    color: #003582;
+}
 /*Fin de área de encabezado*/
+
 
 /*Parte de trabajo Esteban*/
 
@@ -141,6 +151,10 @@
     margin-right: 30px;
 }
 
+.icons-foot a:hover{
+    color: #001154;
+}
+
 .nav-foot{
     width: 20%;
     display: inline-block;
@@ -159,6 +173,10 @@
     font-size: 12px;
     text-decoration: none;
     color: #FFF;
+}
+
+.nav-foot a:hover{
+    color: #001154;
 }
 
 .orange-2{
