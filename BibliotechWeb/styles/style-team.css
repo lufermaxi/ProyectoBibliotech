@@ -1,4 +1,5 @@
 
+
 /*Área de encabezado*/
 .header-section{
     display: flex;
@@ -41,7 +42,7 @@
 .login-bar>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #FFF;
 
@@ -49,7 +50,7 @@
 .nav-bar>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #ff3000;
 }
@@ -64,36 +65,143 @@
 }
 /*Fin de área de encabezado*/
 
+/*Área de línea de sepración*/
+.line-container{
+    width: 100%;
+    height: 80px;
+    background-color: #003582;
+    text-align: center;
+    margin-top: -0.4%;
+}
 
-/*Parte de trabajo Esteban*/
+.line-container h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #FFF;
+    margin: 0.3%;
+    padding-top: 2%;
+}
 
-.equipo-info {
-    padding: 20px;
+.line-container h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFF;
+    margin: 0%;
+    padding-bottom: 3%;
+}
+
+/*Área de info equipo*/
+
+.info-team{
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.8%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.team-one{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border: 1px solid #003582;
+    border-radius: 15px;
+}
+
+.team-two{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border: 1px solid #003582;
+    border-radius: 15px;
+}
+
+.team-three{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border: 1px solid #003582;
+    border-radius: 15px;
+}
+
+.team-four{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border: 1px solid #003582;
+    border-radius: 15px;
+}
+
+.team-five{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border: 1px solid #003582;
+    border-radius: 15px;
+}
+
+.ph img{
+    border: 2px solid #ff3000;
+    border-radius: 100%;
+}
+
+.name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #001154;
     text-align: center;
 }
 
-.equipo-info__imagen {
-    border-radius: 50%;
-    margin-right: auto;
-    margin-left: auto;
+.info{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #ff3000;
+    text-align: center;
 }
 
-.equipo-info__imagen2 {
-    margin-right: auto;
-    width: 680px;
-    margin-left: auto;
+.occupation{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #001154;
+    text-align: center;
+
 }
 
-.equipo-section {
-    display: flex;
-    margin-bottom: 100px;
+.contact-team{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #001154;
+    text-align: center;
 }
 
+.contact-team>p{
+    color: #ff3000;
+}
+
+.contact-team>a{
+    color: #ff3000;
+    text-decoration: none;
+}
 
 /*Área de footer*/
 
 .footer-section{
-    margin-top: 1.5%;
+    margin-top: 5%;
     display: flex;
 }
 
@@ -120,7 +228,7 @@
 .info-foot h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
     color: #FFF;
     
 }
@@ -128,7 +236,7 @@
 .info-foot h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 11px;
+    font-size: 0.7rem;
     color: #FFF;
     
 }
@@ -145,7 +253,7 @@
 .icons-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #FFF;
     margin-right: 30px;
@@ -170,7 +278,7 @@
 .nav-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #FFF;
 }

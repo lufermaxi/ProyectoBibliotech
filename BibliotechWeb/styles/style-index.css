@@ -56,7 +56,7 @@ Variaciones de transparencia:
 .login-bar>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #FFF;
 
@@ -64,7 +64,7 @@ Variaciones de transparencia:
 .nav-bar>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #ff3000;
 }
@@ -91,7 +91,7 @@ Variaciones de transparencia:
 .line-container h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.3rem;
     color: #FFF;
     margin: 0.3%;
     padding-top: 2%;
@@ -100,7 +100,7 @@ Variaciones de transparencia:
 .line-container h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 1rem;
     color: #FFF;
     margin: 0%;
     padding-bottom: 3%;
@@ -133,7 +133,7 @@ Variaciones de transparencia:
 .button-solitude a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #FFF;
 }
@@ -145,7 +145,7 @@ Variaciones de transparencia:
 .banner-text h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.8rem;
     color: #FFF;
     margin: 2%;
 }
@@ -153,7 +153,7 @@ Variaciones de transparencia:
 .banner-text h5{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #FFF;
     margin: 2%;
 }
@@ -163,7 +163,7 @@ Variaciones de transparencia:
 /*Área de footer*/
 
 .footer-section{
-    margin-top: 1.5%;
+    margin-top: 5%;
     display: flex;
 }
 
@@ -190,7 +190,7 @@ Variaciones de transparencia:
 .info-foot h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
     color: #FFF;
     
 }
@@ -198,7 +198,7 @@ Variaciones de transparencia:
 .info-foot h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 11px;
+    font-size: 0.7rem;
     color: #FFF;
     
 }
@@ -215,7 +215,7 @@ Variaciones de transparencia:
 .icons-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #FFF;
     margin-right: 30px;
@@ -240,7 +240,7 @@ Variaciones de transparencia:
 .nav-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #FFF;
 }

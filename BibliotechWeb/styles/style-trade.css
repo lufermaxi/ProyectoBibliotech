@@ -56,7 +56,7 @@ Variaciones de transparencia:
 .login-bar>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #FFF;
 
@@ -64,7 +64,7 @@ Variaciones de transparencia:
 .nav-bar>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #ff3000;
 }
@@ -92,7 +92,7 @@ Variaciones de transparencia:
 .lineTrade-container h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.3rem;
     color: #FFF;
     margin: 0.3%;
     padding-top: 2%;
@@ -101,7 +101,7 @@ Variaciones de transparencia:
 .lineTrade-container h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 1rem;
     color: #FFF;
     margin: 0%;
     padding-bottom: 3%;
@@ -133,7 +133,7 @@ Variaciones de transparencia:
     border: 5px solid #485eb2;
 }
 
-/*Área de fila de libros*/
+/*Área de fila de libros formato ILUSTRADOS OJO (SOLO ESTILO PARA ESTA FILA)*/
 .row-books{
     display: flex;
     flex-wrap: wrap;
@@ -183,7 +183,7 @@ Variaciones de transparencia:
     position: relative;
 }
 
-.modal-view a{
+.modal-view>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     background-color: #485eb2;
@@ -231,14 +231,16 @@ Variaciones de transparencia:
 .book-btn{
     display: block;
     text-align: center;
+    margin-bottom: 2%;
 }
 
-.book-btn button{
+.book-btn a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     background-color: #485eb2;
     color: #FFF;
     border: 10px solid #485eb2;
+    text-decoration: none;
 }
 
 
@@ -449,6 +451,168 @@ Variaciones de transparencia:
     color: #001154;
 }
 
+/*Área ventana modal confirmación préstamo libro 1 book one-----------------------------------------------------------*/
+
+.confirmed-view{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #87cacc;
+    width: 50%;
+    padding: 10px 20px;
+    margin: 12% auto;
+    position: relative;
+}
+
+.confirmed-box{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: #FFF;
+    border-radius: 2%;
+}
+
+.confirmed-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #003582;
+    justify-content: center;
+}
+
+.confirmed-icon{
+    width: 45%;
+    border-radius: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(0, 255, 0);
+}
+
+.confirmed-icon>h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.confirmed-btn{
+    text-align: center;
+    margin-top: 13%;
+}
+
+.confirmed-btn a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background-color: #485eb2;
+    color: #FFF;
+    border: 10px solid #485eb2;
+    text-decoration: none;
+}
+
+
+#view-confirmed1:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*Área ventana modal confirmación préstamo libro 2 Book two-------------------------------------------------------------*/
+
+.confirmed-view2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #16595F;
+    width: 50%;
+    padding: 10px 20px;
+    margin: 12% auto;
+    position: relative;
+}
+
+#view-confirmed2:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*Área ventana modal confirmación préstamo libro 3 Book three-------------------------------------------------------------*/
+
+.confirmed-view3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #50C0D8; /*Cambia el color de la ventana según el color de la portada*/
+    width: 50%;
+    padding: 10px 20px;
+    margin: 12% auto;
+    position: relative;
+}
+
+#view-confirmed3:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/*Área ventana modal confirmación préstamo libro 4 Book four-------------------------------------------------------------*/
+
+.confirmed-view4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #BF7256; /*Cambia el color de la ventana según el color de la portada*/
+    width: 50%;
+    padding: 10px 20px;
+    margin: 12% auto;
+    position: relative;
+}
+
+#view-confirmed4:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/*Área ventana modal confirmación préstamo libro 5 Book five-------------------------------------------------------------*/
+
+.confirmed-view5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #DEE442; /*Cambia el color de la ventana según el color de la portada*/
+    width: 50%;
+    padding: 10px 20px;
+    margin: 12% auto;
+    position: relative;
+}
+
+#view-confirmed5:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/*Área ventana modal confirmación préstamo libro 6 Book six-------------------------------------------------------------*/
+
+.confirmed-view6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #868D7E; /*Cambia el color de la ventana según el color de la portada*/
+    width: 50%;
+    padding: 10px 20px;
+    margin: 12% auto;
+    position: relative;
+}
+
+#view-confirmed6:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
 
 /*Área de footer*/
 
@@ -480,7 +644,7 @@ Variaciones de transparencia:
 .info-foot h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
     color: #FFF;
     
 }
@@ -488,7 +652,7 @@ Variaciones de transparencia:
 .info-foot h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 11px;
+    font-size: 0.7rem;
     color: #FFF;
     
 }
@@ -505,7 +669,7 @@ Variaciones de transparencia:
 .icons-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #FFF;
     margin-right: 30px;
@@ -530,7 +694,7 @@ Variaciones de transparencia:
 .nav-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #FFF;
 }

@@ -57,7 +57,7 @@ Variaciones de transparencia:
 .login-bar>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #FFF;
 
@@ -65,7 +65,7 @@ Variaciones de transparencia:
 .nav-bar>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #ff3000;
 }
@@ -101,7 +101,7 @@ Variaciones de transparencia:
 .lineTrade-container h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.3rem;
     color: #FFF;
     margin: 0.3%;
     padding-top: 2%;
@@ -110,7 +110,7 @@ Variaciones de transparencia:
 .lineTrade-container h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 1rem;
     color: #FFF;
     margin: 0%;
     padding-bottom: 3%;
@@ -155,7 +155,7 @@ Variaciones de transparencia:
 .btn-about>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #FFF;
 }
@@ -174,7 +174,7 @@ Variaciones de transparencia:
 .info-news p{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.1rem;
     text-align: center;
     color: #ff3000;
 }
@@ -206,7 +206,7 @@ Variaciones de transparencia:
     left: 8%;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #FFF;
     text-decoration: none;
     text-align: center;
@@ -230,17 +230,92 @@ Variaciones de transparencia:
     left: 8%;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #FFF;
     text-decoration: none;
     text-align: center;
 }
 
+/*Área modal de noticias*/
+.modal-n{
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal-news1{
+    display: flex;
+    flex-direction: column;
+    background-color: #003582;
+    width: 50%;
+    height: 50%;
+    padding: 10px 20px;
+    margin: 12% auto;
+    position: relative;
+}
+
+#wrap-modal1:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-news2{
+    display: flex;
+    flex-direction: column;
+    background-color: #003582;
+    width: 50%;
+    height: 50%;
+    padding: 10px 20px;
+    margin: 12% auto;
+    position: relative;
+}
+
+#wrap-modal2:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.title-news{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.text-news{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFF;
+    padding: 3%;
+}
+
+.news-btn{
+    display: block;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.news-btn a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background-color: #485eb2;
+    color: #FFF;
+    border: 10px solid #485eb2;
+    text-decoration: none;
+}
 
 /*Área de footer*/
 
 .footer-section{
-    margin-top: 1.5%;
+    margin-top: 5%;
     display: flex;
 }
 
@@ -267,7 +342,7 @@ Variaciones de transparencia:
 .info-foot h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1rem;
     color: #FFF;
     
 }
@@ -275,7 +350,7 @@ Variaciones de transparencia:
 .info-foot h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 11px;
+    font-size: 0.7rem;
     color: #FFF;
     
 }
@@ -292,7 +367,7 @@ Variaciones de transparencia:
 .icons-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #FFF;
     margin-right: 30px;
@@ -317,7 +392,7 @@ Variaciones de transparencia:
 .nav-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #FFF;
 }
