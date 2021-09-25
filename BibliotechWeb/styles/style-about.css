@@ -83,7 +83,6 @@ Variaciones de transparencia:
 /*Área de línea de sepración*/
 .line-container{
     width: 100%;
-    height: 20px;
     background-color: #003582;
     text-align: center;
 }
@@ -91,7 +90,6 @@ Variaciones de transparencia:
 /*Área de línea de título*/
 .lineTrade-container{
     width: 100%;
-    height: 80px;
     background-color: #003582;
     text-align: center;
     margin-top: -0.4%;
@@ -113,31 +111,28 @@ Variaciones de transparencia:
     font-size: 1rem;
     color: #FFF;
     margin: 0%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
 }
 
 
 /*Área de noticias*/
-.news-section{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+.wrapper-main{
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
 }
 
 /*Primera fila de noticias*/
 .row1-news{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    gap: 10px;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 4%;
 }
 
 .bibliotech-news{
     position: relative;
-    margin-bottom: 15px;
 }
 
 .photo-one{
@@ -146,13 +141,10 @@ Variaciones de transparencia:
 
 .btn-about{
     position: absolute;
-    left: 10%;
-    bottom: 10%;
+    left: 12%;
+    bottom: 25%;
     background-color: #485eb2;
     border: 2px solid #485eb2;
-}
-
-.btn-about>a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     font-size: 1rem;
@@ -166,8 +158,7 @@ Variaciones de transparencia:
 }
 
 .info-news{
-    width: 500px;
-    margin-bottom: 15px;
+    margin-bottom: 3%;
     padding: 68px;
 }
 
@@ -184,8 +175,9 @@ Variaciones de transparencia:
 .row2-news{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 10px;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 4%;
 }
 
 .news1-news{
@@ -203,7 +195,7 @@ Variaciones de transparencia:
 .headline-news1{
     position: absolute;
     top: 45%;
-    left: 8%;
+    left: 15%;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
@@ -290,6 +282,7 @@ Variaciones de transparencia:
 }
 
 .text-news{
+    height: 60%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1rem;
@@ -298,9 +291,9 @@ Variaciones de transparencia:
 }
 
 .news-btn{
-    display: block;
+    display: flex;
     text-align: center;
-    margin-top: 7%;
+    left: 2%;
 }
 
 .news-btn a{
@@ -330,7 +323,7 @@ Variaciones de transparencia:
     width: auto;
     margin-top: 3%;
     margin-bottom: 3%;
-    padding-right: 10px;
+    padding-right: 3%;
     border-right: 3px solid #FFF;
 }
 
@@ -342,7 +335,7 @@ Variaciones de transparencia:
 .info-foot h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #FFF;
     
 }
@@ -350,24 +343,28 @@ Variaciones de transparencia:
 .info-foot h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: #FFF;
     
 }
 
 .icons-foot{
     width: 20%;
-    display: block;
+    display: flex;
     margin-top: 3%;
     margin-bottom: 3%;
-    padding: 10px;
+    padding: 3%;
     border-right: 3px solid #FFF;
+}
+
+.icons-foot ul li{
+    list-style: none;
 }
 
 .icons-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #FFF;
     margin-right: 30px;
@@ -392,7 +389,7 @@ Variaciones de transparencia:
 .nav-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-decoration: none;
     color: #FFF;
 }

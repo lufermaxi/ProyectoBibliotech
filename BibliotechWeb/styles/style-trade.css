@@ -82,7 +82,6 @@ Variaciones de transparencia:
 /*Área de línea de título*/
 .lineTrade-container{
     width: 100%;
-    height: 80px;
     background-color: #ff3000;
     text-align: center;
     margin-top: -0.4%;
@@ -104,7 +103,14 @@ Variaciones de transparencia:
     font-size: 1rem;
     color: #FFF;
     margin: 0%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
+}
+
+/*Contenedor principal*/
+.wrapper-main{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Área de caja de búsqueda*/
@@ -112,7 +118,7 @@ Variaciones de transparencia:
 .box-section{
     display: block;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 .search-text{
@@ -137,48 +143,29 @@ Variaciones de transparencia:
 .row-books{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 6%;
+    border: 1px solid #003582;
+    border-radius: 5px;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
-.row-books ul{
-    align-content: center;
+.row-books>ul{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    gap: 20px;
+    gap: 5px;
 }
 
-.book-one{
-    width: 15%;
-}
 
-.book-two{
-    width: 15%;
-}
-
-.book-three{
-    width: 15%;
-}
-
-.book-four{
-    width: 15%;
-}
-
-.book-five{
-    width: 15%;
-}
-
-.book-six{
-    width: 15%;
-}
 
 /*Área de ventanas modal Book one----------------------------------------------------------*/
 .modal-view{
     background-color: #87cacc;
     width: 50%;
-    padding: 10px 20px;
+    padding: 4% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -231,7 +218,7 @@ Variaciones de transparencia:
 .book-btn{
     display: block;
     text-align: center;
-    margin-bottom: 2%;
+    margin-top: 4%;
 }
 
 .book-btn a{
@@ -248,7 +235,7 @@ Variaciones de transparencia:
 .modal-view-two{
     background-color: #16595F;
     width: 50%;
-    padding: 10px 20px;
+    padding: 4% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -290,7 +277,7 @@ Variaciones de transparencia:
 .modal-view-three{
     background-color: #50C0D8;
     width: 50%;
-    padding: 10px 20px;
+    padding: 4% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -331,7 +318,7 @@ Variaciones de transparencia:
 .modal-view-four{
     background-color: #BF7256;
     width: 50%;
-    padding: 10px 20px;
+    padding: 4% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -373,7 +360,7 @@ Variaciones de transparencia:
 .modal-view-five{
     background-color: #DEE442;
     width: 50%;
-    padding: 10px 20px;
+    padding: 4% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -414,7 +401,7 @@ Variaciones de transparencia:
 .modal-view-six{
     background-color: #868D7E;
     width: 50%;
-    padding: 10px 20px;
+    padding: 4% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -459,7 +446,7 @@ Variaciones de transparencia:
     justify-content: center;
     background-color: #87cacc;
     width: 50%;
-    padding: 10px 20px;
+    padding: 5.5% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -499,7 +486,7 @@ Variaciones de transparencia:
 
 .confirmed-btn{
     text-align: center;
-    margin-top: 13%;
+    margin-top: 4%;
 }
 
 .confirmed-btn a{
@@ -525,7 +512,7 @@ Variaciones de transparencia:
     justify-content: center;
     background-color: #16595F;
     width: 50%;
-    padding: 10px 20px;
+    padding: 5.5% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -543,7 +530,7 @@ Variaciones de transparencia:
     justify-content: center;
     background-color: #50C0D8; /*Cambia el color de la ventana según el color de la portada*/
     width: 50%;
-    padding: 10px 20px;
+    padding: 5.5% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -562,7 +549,7 @@ Variaciones de transparencia:
     justify-content: center;
     background-color: #BF7256; /*Cambia el color de la ventana según el color de la portada*/
     width: 50%;
-    padding: 10px 20px;
+    padding: 5.5% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -581,7 +568,7 @@ Variaciones de transparencia:
     justify-content: center;
     background-color: #DEE442; /*Cambia el color de la ventana según el color de la portada*/
     width: 50%;
-    padding: 10px 20px;
+    padding: 5.5% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -600,7 +587,7 @@ Variaciones de transparencia:
     justify-content: center;
     background-color: #868D7E; /*Cambia el color de la ventana según el color de la portada*/
     width: 50%;
-    padding: 10px 20px;
+    padding: 5.5% 5%;
     margin: 12% auto;
     position: relative;
 }
@@ -609,7 +596,6 @@ Variaciones de transparencia:
     opacity: 1;
     pointer-events: auto;
 }
-
 
 
 
@@ -632,7 +618,7 @@ Variaciones de transparencia:
     width: auto;
     margin-top: 3%;
     margin-bottom: 3%;
-    padding-right: 10px;
+    padding-right: 3%;
     border-right: 3px solid #FFF;
 }
 
@@ -644,7 +630,7 @@ Variaciones de transparencia:
 .info-foot h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #FFF;
     
 }
@@ -652,24 +638,28 @@ Variaciones de transparencia:
 .info-foot h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: #FFF;
     
 }
 
 .icons-foot{
     width: 20%;
-    display: block;
+    display: flex;
     margin-top: 3%;
     margin-bottom: 3%;
-    padding: 10px;
+    padding: 3%;
     border-right: 3px solid #FFF;
+}
+
+.icons-foot ul li{
+    list-style: none;
 }
 
 .icons-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #FFF;
     margin-right: 30px;
@@ -694,7 +684,7 @@ Variaciones de transparencia:
 .nav-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-decoration: none;
     color: #FFF;
 }
