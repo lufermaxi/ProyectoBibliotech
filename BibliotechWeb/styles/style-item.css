@@ -381,6 +381,10 @@
     cursor: pointer;
 }
 
+.boton__crear:hover {
+    background-color: #07bba9;
+}
+
 .icono-superior {
     display: flex;
     flex-direction: row;
