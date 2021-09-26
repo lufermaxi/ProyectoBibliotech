@@ -130,16 +130,66 @@
         <!-- FIN Parte superior (Migas de pan y botones) -->
 
 
-        <!-- Contiene los elementos centrales de la pagina -->
+
+
+
+        <!-- Formulario para creación de Articulos -->
         <div class="seccion-central">
 
+            <!-- Recuadro que contiene a todos los elementos del formulario -->
+            <div class="formulario-base">
+
+                <!-- Segmento izquiero del contenedor -->
+                <div class="formulario-base-lado1">
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" id="isbn" name="isbn">
+
+                    <label for="nombre-articulo">Nombre del artículo:</label>
+                    <input type="text" id="nombre-articulo" name="nombre-articulo">
+
+                    <label for="nombre-autor">Nombre del autor:</label>
+                    <input type="text" id="nombre-autor" name="nombre-autor">
+                </div>
+                <!-- FIN Segmento izquero del contenedor -->
 
 
+                <!-- Segmento derecho del contenedor -->
+                <div class="formulario-base-lado2">
+                    <label for="nombre-editorial">Nombre de la editorial:</label>
+                    <input type="text" id="nombre-editorial" name="nombre-editorial">
 
+                    <label for="nombre-editorial">Seleccione una categoria:</label>
+                    <select name="categoria" id="categoria">
+                        <option value=""></option>
+                        <option value="Académico">Académico</option>
+                        <option value="Digital">Digital</option>
+                        <option value="Ilustración">Ilustración</option>
+                        <option value="Manual">Manual</option>
+                        <option value="Revista">Revista</option>
+                    </select>
+                </div>
+                <!-- FIN Segmento derecho del contenedor -->
 
+                <!-- Sección inferior del contenedor -->
+                <div class="contenedor-formulario-footer">
+
+                    <div class="contenedor-botones">
+                        <a class="enlace-cancelar" href="item.html">CANCELAR</a>
+                        <input class="formulario__boton-crear" type="submit" value="CREAR">
+                    </div>
+
+                </div>
+                <!-- FIN Sección inferior del contenedor -->
+
+            </div>
+            <!-- FIN Recuadro que contiene a todos los elementos del formulario -->
 
         </div>
-        <!-- FIN Contiene los elementos centrales de la pagina -->
+        <!-- FIN Formulario para creación de Articulos -->
+
+
+
+
 
 
 
