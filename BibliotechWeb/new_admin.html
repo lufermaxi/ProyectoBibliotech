@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Hoja de estilos local -->
-    <link rel="stylesheet" href="styles/style-new_item.css">
+    <link rel="stylesheet" href="styles/style-new_admin.css">
 
     <!-- Hoja de scripts local -->
     <script src="scripts/navegacion.js"></script>
 
-    <title>Artículos | Bibliotech</title>
+    <title>Nuevo Administrador | Bibliotech</title>
 </head>
 
 <body class="cuerpo">
@@ -59,27 +59,27 @@
                     <div class="elemento-1__icono">
                         <span class="material-icons material-icons--settings">restore</span>
                     </div>
-                    <p class="elemento-1__titulo "> Recientes</p>
+                    <p class="elemento-1__titulo"> Recientes</p>
                 </div>
             </div>
 
             <!-- Segundo elemento de la barra lateral -->
-            <div class="contenedor-barra-2 contenedor-barra-1--actual" onclick="javascript:enlaceArticulos();">
+            <div class="contenedor-barra-2" onclick="javascript:enlaceArticulos();">
                 <div class="elemento-1">
                     <div class="elemento-1__icono">
-                        <span class="material-icons material-icons--settings-actual">import_contacts</span>
+                        <span class="material-icons material-icons--settings">import_contacts</span>
                     </div>
-                    <p class="elemento-1__titulo elemento-1__titulo--actual">Articulos</p>
+                    <p class="elemento-1__titulo">Artículos</p>
                 </div>
             </div>
 
             <!-- Tercer elemento de la barra lateral -->
-            <div class="contenedor-barra-3" onclick="javascript:enlaceAdministradores();">
+            <div class="contenedor-barra-3 contenedor-barra-1--actual" onclick="javascript:enlaceAdministradores();">
                 <div class="elemento-1">
                     <div class="elemento-1__icono">
-                        <span class="material-icons material-icons--settings">group</span>
+                        <span class="material-icons material-icons--settings-actual">group</span>
                     </div>
-                    <p class="elemento-1__titulo">Administradores</p>
+                    <p class="elemento-1__titulo elemento-1__titulo--actual">Administradores</p>
                 </div>
             </div>
 
@@ -118,9 +118,9 @@
 
                 <!-- Migas de pan -->
                 <div class="contenedor-migasdepan">
-                    <p class="miga1 migas__principal--texto"><a href="item.html">Artículos</a></p>
+                    <p class="miga1 migas__principal--texto"><a href="admin.html">Administradores</a></p>
                     <p class="separador migas__principal--texto">/</p>
-                    <p class="miga2 migas__principal--texto">Nuevo Artículo</p>
+                    <p class="miga2 migas__principal--texto">Nuevo Administrador</p>
                 </div>
                 <!-- FIN Migas de pan -->
 
@@ -141,32 +141,25 @@
 
                 <!-- Segmento izquiero del contenedor -->
                 <div class="formulario-base-lado1">
-                    <label for="isbn">ISBN:</label>
-                    <input type="text" id="isbn" name="isbn">
+                    <label for="isbn">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username">
 
-                    <label for="nombre-articulo">Nombre del artículo:</label>
-                    <input type="text" id="nombre-articulo" name="nombre-articulo">
+                    <label for="nombre-articulo">Contraseña</label>
+                    <input type="text" id="password" name="password">
 
-                    <label for="nombre-autor">Nombre del autor:</label>
-                    <input type="text" id="nombre-autor" name="nombre-autor">
+                    <label for="nombre-autor">Email</label>
+                    <input type="text" id="email" name="email">
                 </div>
                 <!-- FIN Segmento izquero del contenedor -->
 
 
                 <!-- Segmento derecho del contenedor -->
                 <div class="formulario-base-lado2">
-                    <label for="nombre-editorial">Nombre de la editorial:</label>
-                    <input type="text" id="nombre-editorial" name="nombre-editorial">
+                    <label for="nombre-editorial">Nombre</label>
+                    <input type="text" id="name" name="name">
 
-                    <label for="nombre-editorial">Seleccione una categoria:</label>
-                    <select name="categoria" id="categoria">
-                        <option value=""></option>
-                        <option value="Académico">Académico</option>
-                        <option value="Digital">Digital</option>
-                        <option value="Ilustración">Ilustración</option>
-                        <option value="Manual">Manual</option>
-                        <option value="Revista">Revista</option>
-                    </select>
+                    <label for="nombre-editorial">Apellido</label>
+                    <input type="text" id="lastname" name="lastname">
                 </div>
                 <!-- FIN Segmento derecho del contenedor -->
 
