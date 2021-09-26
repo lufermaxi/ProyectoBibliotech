@@ -398,6 +398,13 @@
     font-size: 2.375rem;
 }
 
+.material-icons--boton-sup-fixed {
+    color: #FFFFFF;
+    font-size: 1.7rem;
+}
+
+
+
 
 
 .boton__seleccionar {
@@ -434,6 +441,31 @@
 
     margin-right: 1.25rem;
 
+}
+
+.boton__editar {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #485EB2;
+
+    width: 2.375rem;
+    height: 2.375rem;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+
+    margin-right: 1.25rem;
+
+    padding: 6px;
+
+    cursor: pointer;
+}
+
+.boton__editar:hover {
+    background-color: #3a4b8d;
 }
 
 /* FIN Botones superiores */
