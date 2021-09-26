@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Hoja de estilos local -->
-    <link rel="stylesheet" href="styles/style-new_item.css">
+    <link rel="stylesheet" href="styles/style-edit_item.css">
 
     <!-- Hoja de scripts local -->
     <script src="scripts/navegacion.js"></script>
 
-    <title>Artículos | Bibliotech</title>
+    <title>Editar artículos | Bibliotech</title>
 </head>
 
 <body class="cuerpo">
@@ -69,7 +69,7 @@
                     <div class="elemento-1__icono">
                         <span class="material-icons material-icons--settings-actual">import_contacts</span>
                     </div>
-                    <p class="elemento-1__titulo elemento-1__titulo--actual">Articulos</p>
+                    <p class="elemento-1__titulo elemento-1__titulo--actual">Artículos</p>
                 </div>
             </div>
 
@@ -120,7 +120,7 @@
                 <div class="contenedor-migasdepan">
                     <p class="miga1 migas__principal--texto"><a href="item.html">Artículos</a></p>
                     <p class="separador migas__principal--texto">/</p>
-                    <p class="miga2 migas__principal--texto">Nuevo Artículo</p>
+                    <p class="miga2 migas__principal--texto">Editar Artículo</p>
                 </div>
                 <!-- FIN Migas de pan -->
 
@@ -130,14 +130,19 @@
         <!-- FIN Parte superior (Migas de pan y botones) -->
 
 
-
-
-
         <!-- Formulario para creación de Articulos -->
         <div class="seccion-central">
 
             <!-- Recuadro que contiene a todos los elementos del formulario -->
             <div class="formulario-base">
+
+                <div class="contenedor-formulario-header">
+
+                    <div class="contenedor-header-titulo">
+                        <p class="formulario__titulo-header">Titulo del artículo</p>
+                    </div>
+
+                </div>
 
                 <!-- Segmento izquiero del contenedor -->
                 <div class="formulario-base-lado1">
@@ -158,9 +163,8 @@
                     <label for="nombre-editorial">Nombre de la editorial:</label>
                     <input type="text" id="nombre-editorial" name="nombre-editorial">
 
-                    <label for="nombre-editorial">Seleccione una categoria:</label>
+                    <label for="nombre-editorial">Categoria:</label>
                     <select name="categoria" id="categoria">
-                        <option value=""></option>
                         <option value="Académico">Académico</option>
                         <option value="Digital">Digital</option>
                         <option value="Ilustración">Ilustración</option>
@@ -175,7 +179,7 @@
 
                     <div class="contenedor-botones">
                         <a class="enlace-cancelar" href="item.html">CANCELAR</a>
-                        <input class="formulario__boton-crear" type="submit" value="CREAR">
+                        <input class="formulario__boton-crear" type="submit" value="ACEPTAR">
                     </div>
 
                 </div>
