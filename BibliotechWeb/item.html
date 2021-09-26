@@ -22,25 +22,38 @@
 <body class="cuerpo">
 
 
+    <!-- Barra de navegación lateral -->
     <aside class="barra-lateral">
+
+        <!-- Grupo de elementos #1 -->
         <div class="contenedor-header">
+
+            <!-- Contenedor logo -->
             <div class="contenedor-header__logo">
                 <img src="assets/images/logo-minimal.png" alt="Logo Bibliotech">
             </div>
+
+            <!-- Contenedor de usuario actual -->
             <div class="contenedor-header__usuario">
                 <div class="header__usuario">
+
+                    <!-- Nombre de usuario actual -->
                     <p class="usuario_titulo">Nombre de usuario</p>
+
+                    <!-- Tipo de usuario actual -->
                     <div class="header__usuario-label">
                         <div class="header__usuario-label-texto">root</div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
+        <!-- FIN Grupo de elementos #1 -->
 
-
+        <!-- Grupo de elementos #2 -->
         <div class="contenedor-body-1">
 
+            <!-- Primer elemento de la barra lateral -->
             <div class="contenedor-barra-1" onclick="javascript:enlaceRecientes();">
                 <div class="elemento-1">
                     <div class="elemento-1__icono">
@@ -50,6 +63,7 @@
                 </div>
             </div>
 
+            <!-- Segundo elemento de la barra lateral -->
             <div class="contenedor-barra-2 contenedor-barra-1--actual" onclick="javascript:enlaceArticulos();">
                 <div class="elemento-1">
                     <div class="elemento-1__icono">
@@ -59,6 +73,7 @@
                 </div>
             </div>
 
+            <!-- Tercer elemento de la barra lateral -->
             <div class="contenedor-barra-3" onclick="javascript:enlaceAdministradores();">
                 <div class="elemento-1">
                     <div class="elemento-1__icono">
@@ -69,10 +84,13 @@
             </div>
 
         </div>
+        <!-- FIN Grupo de elementos #2 -->
 
 
+        <!-- Grupo de elementos #3 -->
         <div class="contenedor-body-2">
 
+            <!-- Tercer elemento de la barra lateral -->
             <div class="contenedor-barra-1" onclick="javascript:enlaceSalir();">
                 <div class="elemento-1">
                     <div class="elemento-1__icono">
@@ -81,22 +99,30 @@
                     <p class="elemento-1__titulo">Salir</p>
                 </div>
             </div>
+
         </div>
+        <!-- FIN Grupo de elementos #3 -->
+
     </aside>
+    <!-- FIN Barra de navegación lateral -->
 
 
-
-
+    <!-- Contenido principal de la pagina -->
     <main class="contenido">
 
+        <!-- Parte superior (Migas de pan y botones) -->
         <div class="contenedor-migas">
+
+            <!-- Migas de pan -->
             <div class="migas__principal">
                 <p class="miga2 migas__principal--texto">Articulos</p>
                 <p class="separador migas__principal--texto">|</p>
-
             </div>
+            <!-- FIN Migas de pan -->
 
         </div>
+        <!-- FIN Parte superior (Migas de pan y botones) -->
+
 
 
 
@@ -115,6 +141,7 @@
 
 
     </main>
+    <!-- FIN Contenido principal de la pagina -->
 
 
 </body>
