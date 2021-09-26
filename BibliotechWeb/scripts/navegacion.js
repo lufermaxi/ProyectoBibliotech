@@ -33,5 +33,5 @@ function enlaceEditarAdministrador(){
 //
 
 function enlaceSalir(){
-    location.href = "./login.html";
+    location.href = "login.html";
 }
