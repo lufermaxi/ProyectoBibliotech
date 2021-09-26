@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- otras hojas 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <!-- Iconos Material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Hoja de estilos local -->
+    <link rel="stylesheet" href="styles/new_item.css">
+
+    <!-- Hoja de scripts local -->
+    <script src="script/barra-scripts.js"></script>
+
+    <title>Bibliotech | prueba</title>
+</head>
+
+<body class="cuerpo">
+
+
+    <aside class="barra-lateral">
+        <div class="contenedor-header">
+            <div class="contenedor-header__logo">
+                <img src="assets/logo-minimal.png" alt="">
+            </div>
+            <div class="contenedor-header__usuario">
+                <div class="header__usuario">
+                    <p class="usuario_titulo">Nombre de usuario</p>
+                    <div class="header__usuario-label">
+                        <div class="header__usuario-label-texto">root</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="contenedor-body-1">
+
+            <div class="contenedor-barra-1" onclick="javascript:enlaceRecientes();">
+                <div class="elemento-1">
+                    <div class="elemento-1__icono">
+                        <span class="material-icons material-icons--settings">restore</span>
+                    </div>
+                    <p class="elemento-1__titulo "> Recientes</p>
+                </div>
+            </div>
+
+            <div class="contenedor-barra-2 contenedor-barra-1--actual" onclick="javascript:enlaceArticulos();">
+                <div class="elemento-1">
+                    <div class="elemento-1__icono">
+                        <span class="material-icons material-icons--settings-actual">import_contacts</span>
+                    </div>
+                    <p class="elemento-1__titulo elemento-1__titulo--actual">Articulos</p>
+                </div>
+            </div>
+
+            <div class="contenedor-barra-3" onclick="javascript:enlaceAdministradores();">
+                <div class="elemento-1">
+                    <div class="elemento-1__icono">
+                        <span class="material-icons material-icons--settings">group</span>
+                    </div>
+                    <p class="elemento-1__titulo">Administradores</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="contenedor-body-2">
+
+            <div class="contenedor-barra-1" onclick="javascript:enlaceSalir();">
+                <div class="elemento-1">
+                    <div class="elemento-1__icono">
+                        <span class="material-icons material-icons--settings">logout</span>
+                    </div>
+                    <p class="elemento-1__titulo">Salir</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+
+
+    <main class="contenido">
+
+        <div class="contenedor-migas">
+            <div class="migas__principal">
+                <p class="miga2 migas__principal--texto">Articulos</p>
+                <p class="separador migas__principal--texto">|</p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+</body>
+
+</html>
