@@ -450,6 +450,11 @@
     color: #AAAAAA
 }
 
+.migas__principal--texto a:hover {
+    text-decoration: none;
+    color: #485EB2
+}
+
 .miga1 {
     color: #AAAAAA;
 }
@@ -466,6 +471,13 @@
 
 /* FIN Parte superior (Migas de pan y botones) */
 
+
+
+/* Contenido central y principal de la pagina */
+
+
+
+/* Contenedor central */
 .seccion-central {
     /* background-color: #000000; WIREFRAME*/
 
@@ -477,3 +489,5 @@
 
     box-sizing: border-box;
 }
+
+/* FIN Contenedor central */
