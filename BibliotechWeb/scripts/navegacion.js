@@ -1,34 +1,34 @@
 
 function enlaceRecientes(){
-    location.href = "./newer.html";
+    location.href = "newer.html";
 }
 
 
 // Articulos
 function enlaceArticulos(){
-    location.href = "./item.html";
+    location.href = "item.html";
 }
 
 function enlaceNuevoArticulo(){
-    location.href = "./new_item.html";
+    location.href = "new_item.html";
 }
 
 function enlaceEditarArticulo(){
-    location.href = "./edit_item.html";
+    location.href = "edit_item.html";
 }
 //
 
 // Administradores
 function enlaceAdministradores(){
-    location.href = "./admin.html";
+    location.href = "admin.html";
 }
 
 function enlaceNuevoAdministrador(){
-    location.href = "./new_admin.html";
+    location.href = "new_admin.html";
 }
 
 function enlaceEditarAdministrador(){
-    location.href = "./edit_admin.html";
+    location.href = "edit_admin.html";
 }
 //
 
