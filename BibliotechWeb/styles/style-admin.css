@@ -90,7 +90,8 @@
 }
 
 .usuario_titulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 
@@ -107,7 +108,7 @@
 }
 
 .header__usuario-label-texto {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -176,7 +177,7 @@
 
 
 .elemento-1__titulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
 }
 
@@ -216,6 +217,7 @@
 
 .elemento-1__titulo--actual {
     color: #FF3000;
+    font-weight: 500;
 }
 
 .material-icons--settings-actual {
@@ -398,6 +400,10 @@
     font-size: 2.375rem;
 }
 
+.material-icons--boton-sup-fixed {
+    color: #FFFFFF;
+    font-size: 1.7rem;
+}
 
 
 .boton__seleccionar {
@@ -436,12 +442,38 @@
 
 }
 
+.boton__editar {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #485EB2;
+
+    width: 2.375rem;
+    height: 2.375rem;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+
+    margin-right: 1.25rem;
+
+    padding: 6px;
+
+    cursor: pointer;
+}
+
+.boton__editar:hover {
+    background-color: #3a4b8d;
+}
+
 /* FIN Botones superiores */
 
 
 /* Migas de pan */
 .migas__principal--texto {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 2.15rem;
 }
 
