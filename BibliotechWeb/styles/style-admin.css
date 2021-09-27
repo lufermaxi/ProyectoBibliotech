@@ -34,6 +34,7 @@ html {
     padding-top: 0.625rem;
     */
     border-right: 1px solid #0000001F;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.082), 0 1px 2px rgba(0, 0, 0, 0.158);
 
 }
 
@@ -181,7 +182,7 @@ html {
 
 
 .elemento-1__titulo {
-    color: #000000;
+    color: #828282;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     font-weight: 300;
