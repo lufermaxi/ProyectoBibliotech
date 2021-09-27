@@ -90,7 +90,7 @@
 }
 
 .usuario_titulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -107,7 +107,8 @@
 }
 
 .header__usuario-label-texto {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 
@@ -176,7 +177,7 @@
 
 
 .elemento-1__titulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
 }
 
@@ -216,6 +217,7 @@
 
 .elemento-1__titulo--actual {
     color: #FF3000;
+    font-weight: 500;
 }
 
 .material-icons--settings-actual {
@@ -442,7 +444,8 @@
 
 /* Migas de pan */
 .migas__principal--texto {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 2.15rem;
 }
 
@@ -513,6 +516,9 @@
 
 
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
 }
 
 .formulario-base-lado1 {
