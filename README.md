@@ -1,4 +1,4 @@
-![Logo](/images/LOGOTIPO-PEQUENO.png) 
+![Logo](/images/logo-minimal.png) 
 
 ## Desarrollo de software - Ciclo 3 MISIONTIC
 
