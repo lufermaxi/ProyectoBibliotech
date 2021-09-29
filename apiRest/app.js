@@ -19,6 +19,7 @@ var conexion = mysql.createConnection({
     password: '4OgrIqS0CXwa6QH',
     database: 'epiz_29792736_bibliotech'
 });
+
  */
 conexion.connect(function(error){
     if(error){
