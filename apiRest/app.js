@@ -12,15 +12,7 @@ var conexion = mysql.createConnection({
     password: '',
     database: 'bibliotech'
 });
-/*
-    var conexion = mysql.createConnection({
-    host: 'sql100.epizy.com',
-    user: 'epiz_29792736',
-    password: '4OgrIqS0CXwa6QH',
-    database: 'epiz_29792736_bibliotech'
-});
 
- */
 conexion.connect(function(error){
     if(error){
         throw error;
