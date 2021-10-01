@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="cuerpo">
     <SideBar />
     <!-- Contenido principal de la pagina -->
     <main class="contenido">
