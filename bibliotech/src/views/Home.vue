@@ -3,18 +3,18 @@
     <NavBar />
     <main class="main-section">
       <!--Inicio de contenido de la página index-->
-      <b-row class="line-container">
-        <b-col>
+      <div class="line-container">
           <h1>¡Bienvenido!</h1>
           <h3>a nuestro sistema bibliotecario</h3>
-        </b-col>
-      </b-row>
-      |
+      </div>
       <b-container class="wrapper-main" fluid>
         <!--Sección para imagen central de los libros de Bibliotech-->
-        <b-row>
-          <b-col cols="12" md="6" class="banner-image">
-            <img src="../assets/images/index-image.png" alt="Banner de inicio"/>
+        <b-row class="banner-image">
+          <b-col cols="12" md="12" lg="6">
+            <img class="banner-image1" src="../assets/images/index-image1.png" fluid alt="Banner de inicio"/>
+          </b-col>
+          <b-col cols="12" md="12" lg="6">
+            <img class="banner-image2" src="../assets/images/index-image2.png" fluid alt="Banner de inicio"/>
           </b-col>
         </b-row>
         <!--Saludo e invitación a ir a préstamo-->

@@ -49,6 +49,7 @@ Variaciones de transparencia:
     align-items: flex-end;
 }}
 
+
 .login-bar{
     width: 100px;
     background-color: #485eb2;
@@ -119,34 +120,46 @@ Variaciones de transparencia:
 
 /*Contenedor principal*/
 .wrapper-main{
-    max-width: 90%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
 /*Área de banner de libros, saludo y redirección a préstamo*/
 .banner-image{
-    display: block;
-    text-align: center;
-    margin-top: 3%;
+    width: fit-content;
+}
+
+.banner-image1{
+    width: 100%;
+}
+
+.banner-image2{
+    width: 100%;
+}
+
+@media (min-width: 1280px){
+    .banner-image{
+        width: 100%;
+        padding: 0rem;
+        text-align: center;
+    }
 }
 
 .banner-text{
     display: block;
-    width: 25%;
+    width: 28%;
     text-align: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
     position: relative; z-index: 1;
     background-color: #ff3000;
+    bottom: 6rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2rem;
 }
 
 .button-solitude{
     background-color: #ff6c38;
-    padding: 1rem;
+    padding: 1.3rem;
     border-radius: 3px;
 }
 
@@ -167,7 +180,7 @@ Variaciones de transparencia:
     font-weight: 700;
     font-size: 1.8rem;
     color: #FFF;
-    margin: 2%;
+    margin: 0.8rem;
 }
 
 .banner-text h5{
@@ -175,7 +188,7 @@ Variaciones de transparencia:
     font-weight: 300;
     font-size: 1.1rem;
     color: #FFF;
-    margin: 2%;
+    margin: 0.8rem;
 }
 
 /*Fin de área de banner*/
@@ -183,25 +196,44 @@ Variaciones de transparencia:
 /*Área de footer único en esta hoja de estilos*/
 
 .blue-1{
-    display: flex;
     background-color: #003582;
+    text-align: center;
+}
+
+.orange-2{
+    background-color: #ff6c38;
+}
+
+.orange-3{
+    background-color: #ff3000;
+}
+
+.orange-4{
+    background-color: #c30000;
 }
 
 .logo-foot{
-    margin-top: 3rem;
+    width: 100;
     align-self: center;
+    padding: 1rem;
 }
 
 .info-foot{
-    margin-top: 3rem;
-    margin-left: 1rem;
     align-self: center;
+    padding: 1rem;
+    border-right: 2px solid #FFF;
+}
+
+@media (max-width: 960px){
+    .info-foot{
+        border-right: 0px;
+    }
 }
 
 .info-foot h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #FFF;
     
 }
@@ -209,14 +241,14 @@ Variaciones de transparencia:
 .info-foot h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #FFF;
 
 }
 
 .icons-foot{
-    margin-top: 3rem;
-    padding-left: 2rem;
+    align-self: center;
+    padding: 1rem;
 }
 
 .icons-foot a{
@@ -224,28 +256,18 @@ Variaciones de transparencia:
     font-weight: 400;
     font-size: 2rem;
     text-decoration: none;
+    text-align: center;
     color: #FFF;
+    padding: 1rem;
 }
 
 .icons-foot a:hover{
     color: #001154;
 }
 
-.icons-foot h6{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: #FFF;
-}
-
-.icons-foot h6:hover{
-    color: #001154;
-}
-
-
 .nav-foot{
-    margin-top: 3rem;
+    align-self: center;
+    padding: 1rem;
 }
 
 .nav-foot ul li{
@@ -265,18 +287,5 @@ Variaciones de transparencia:
     color: #001154;
     border-bottom: 0.2rem solid #001154;
 }
-
-.orange-2{
-    background-color: #ff6c38;
-}
-
-.orange-3{
-    background-color: #ff3000;
-}
-
-.orange-4{
-    background-color: #c30000;
-}
-
 /*Fin de área de footer*/
 
