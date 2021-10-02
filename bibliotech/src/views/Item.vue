@@ -157,12 +157,12 @@
               <!-- Seccion inferior de la carta -->
               <div class="carta-footer">
                 <div class="carta-footer__botones">
-                  <button
+                  <a
                     class="carta-footer__botones carta-footer__botones--cancelar"
                     @click="borrar(articulo.id)"
                   >
                     BORRAR
-                  </button>
+                  </a>
                   <input
                     class="carta-footer__botones carta-footer__botones--boton"
                     @click="
@@ -193,7 +193,7 @@
   </div>
 </template>
 <script>
-import SideBar from "../components/sidebar.vue";
+import SideBar from "../components/sidebar.vue"
 
 export default {
   components: {
@@ -214,21 +214,21 @@ export default {
         nombre_categoria: "",
         isbn: "",
       },
-    };
+    }
   },
   created() {
-    this.mostrar();
+    this.mostrar()
   },
   methods: {
     mostrar() {
       this.axios.get(this.url).then((response) => {
-        this.articulos = response.data;
-      });
+        this.articulos = response.data
+      })
     },
     borrar(id) {
       this.axios.delete(this.url + id).then((response) => {
-        this.mostrar();
-      });
+        this.mostrar()
+      })
     },
     crear () {
       let parametros = {
@@ -238,16 +238,16 @@ export default {
         nombre_autor: this.articulo.nombre_autor,
         nombre_categoria: this.articulo.nombre_categoria,
         isbn: this.articulo.isbn,
-      };
+      }
       this.axios.post(this.url, parametros).then((response) => {
-        this.mostrar();
-      });
-      this.articulo.nombre = "";
-      this.articulo.prestamo= "";
-      this.articulo.nombre_editorial = "";
-      this.articulo.nombre_autor = "";
-      this.articulo.nombre_categoria = "";
-      this.articulo.isbn = "";
+        this.mostrar()
+      })
+      this.articulo.nombre = ""
+      this.articulo.prestamo= ""
+      this.articulo.nombre_editorial = ""
+      this.articulo.nombre_autor = ""
+      this.articulo.nombre_categoria = ""
+      this.articulo.isbn = ""
     },
     editar () {
       let parametros = {
@@ -258,33 +258,33 @@ export default {
         nombre_categoria: this.articulo.nombre_categoria,
         isbn: this.articulo.isbn,
         id: this.articulo.id,
-      };
+      }
       this.axios.put(this.url + this.articulo.id, parametros).then((response) => {
-        this.mostrar();
-      });
+        this.mostrar()
+      })
     },
     //formularios y botones
     guardar() {
       if (this.operacion == "crear") {
-        this.crear();
+        this.crear()
       }
       if (this.operacion == "editar") {
-        this.editar();
+        this.editar()
       }
-      this.activar = false;
+      this.activar = false
     },
     cancelar() {
-      this.activar = false;
+      this.activar = false
     },
     formNuevo() {
-      this.activar = true;
-      this.operacion = "crear";
-      this.articulo.nombre = "";
-      this.articulo.prestamo = "0";
-      this.articulo.nombre_editorial = "";
-      this.articulo.nombre_autor = "";
-      this.articulo.nombre_categoria = "";
-      this.articulo.isbn = "";
+      this.activar = true
+      this.operacion = "crear"
+      this.articulo.nombre = ""
+      this.articulo.prestamo = "0"
+      this.articulo.nombre_editorial = ""
+      this.articulo.nombre_autor = ""
+      this.articulo.nombre_categoria = ""
+      this.articulo.isbn = ""
     },
     formEditar(
       id,
@@ -295,16 +295,16 @@ export default {
       nombre_categoria,
       isbn
     ) {
-      this.articulo.id = id;
-      this.articulo.nombre = nombre;
-      this.articulo.prestamo = prestamo;
-      this.articulo.nombre_editorial = nombre_editorial;
-      this.articulo.nombre_autor = nombre_autor;
-      this.articulo.nombre_categoria = nombre_categoria;
-      this.articulo.isbn = isbn;
-      this.activar = true;
-      this.operacion = "editar";
+      this.articulo.id = id
+      this.articulo.nombre = nombre
+      this.articulo.prestamo = prestamo
+      this.articulo.nombre_editorial = nombre_editorial
+      this.articulo.nombre_autor = nombre_autor
+      this.articulo.nombre_categoria = nombre_categoria
+      this.articulo.isbn = isbn
+      this.activar = true
+      this.operacion = "editar"
     },
   },
-};
+}
 </script>
