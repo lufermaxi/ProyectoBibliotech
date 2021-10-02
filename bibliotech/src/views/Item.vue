@@ -18,7 +18,9 @@
             <!-- Boton para crear elementos -->
             <div class="boton__crear">
               <div class="icono-superior">
-                <span class="material-icons material-icons--boton-sup"
+                <span
+                  class="material-icons material-icons--boton-sup"
+                  @click="formNuevo()"
                   >add</span
                 >
               </div>
@@ -48,181 +50,261 @@
           </div>
         </div>
       </div>
-      <!-- FIN Parte superior (Migas de pan y botones) -->
+      <div v-if="activar != false">
+        <!-- Formulario para creación de Articulos -->
+        <div class="seccion-central">
+          <!-- Recuadro que contiene a todos los elementos del formulario -->
+          <div class="formulario-base">
+            <!-- Segmento izquiero del contenedor -->
+            <div class="formulario-base-lado1">
+              <label for="isbn">ISBN:</label>
+              <input
+                type="text"
+                id="isbn"
+                v-model="articulo.isbn"
+                name="isbn"
+              />
 
-      <!-- Contenido luego de las migas de pan (Cartas) -->
-      <div class="seccion-central">
-        <!-- Grilla dinamica -->
-        <div class="grilla-responsive">
-          <!-- Carta para listar elementos -->
-          <div class="carta">
-            <!-- Seccion superior de la carta -->
-            <div class="carta-header">
-              <div class="carta-header__texto">
-                <p class="carta-header__texto carta-header__texto--titulo">
-                  Nombre del Articulo
-                </p>
-                <p class="carta-header__texto carta-header__texto--subtitulo">
-                  Nombre del Autor
-                </p>
-              </div>
+              <label for="nombre-articulo">Nombre del artículo:</label>
+              <input
+                type="text"
+                id="nombre-articulo"
+                v-model="articulo.nombre"
+                name="nombre-articulo"
+              />
+
+              <label for="nombre-autor">Nombre del autor:</label>
+              <input
+                type="text"
+                id="nombre-autor"
+                v-model="articulo.nombre_autor"
+                name="nombre-autor"
+              />
             </div>
+            <!-- FIN Segmento izquero del contenedor -->
 
-            <!-- Seccion central de la carta -->
-            <div class="carta-body">
-              <div class="carta-body__imagen">
-                <img src="../assets/images/illustrated/book-one.png" alt="" />
-              </div>
+            <!-- Segmento derecho del contenedor -->
+            <div class="formulario-base-lado2">
+              <label for="nombre-editorial">Nombre de la editorial:</label>
+              <input
+                type="text"
+                v-model="articulo.nombre_editorial"
+                id="nombre-editorial"
+                name="nombre-editorial"
+              />
+
+              <label for="nombre-editorial">Seleccione una categoria:</label>
+              <select
+                name="categoria"
+                v-model="articulo.nombre_categoria"
+                id="categoria"
+              >
+                <option value=""></option>
+                <option value="Académico">Académico</option>
+                <option value="Digital">Digital</option>
+                <option value="Ilustración">Ilustración</option>
+                <option value="Manual">Manual</option>
+                <option value="Revista">Revista</option>
+              </select>
             </div>
+            <!-- FIN Segmento derecho del contenedor -->
 
-            <!-- Seccion inferior de la carta -->
-            <div class="carta-footer">
-              <div class="carta-footer__botones">
-                <a
-                  class="carta-footer__botones carta-footer__botones--cancelar"
-                  href="item.html"
-                  >BORRAR</a
-                >
+            <!-- Sección inferior del contenedor -->
+            <div class="contenedor-formulario-footer">
+              <div class="contenedor-botones">
+                <a class="enlace-cancelar" @click="cancelar()">CANCELAR</a>
                 <input
-                  class="carta-footer__botones carta-footer__botones--boton"
+                  class="formulario__boton-crear"
                   type="submit"
-                  value="EDITAR"
+                  @click="guardar()"
+                  value="CREAR"
                 />
               </div>
             </div>
+            <!-- FIN Sección inferior del contenedor -->
           </div>
-          <!-- FIN Carta para listar elementos -->
-
-          <!-- Carta para listar elementos -->
-          <div class="carta">
-            <!-- Seccion superior de la carta -->
-            <div class="carta-header">
-              <div class="carta-header__texto">
-                <p class="carta-header__texto carta-header__texto--titulo">
-                  Nombre del Articulo
-                </p>
-                <p class="carta-header__texto carta-header__texto--subtitulo">
-                  Nombre del Autor
-                </p>
-              </div>
-            </div>
-
-            <!-- Seccion central de la carta -->
-            <div class="carta-body">
-              <div class="carta-body__imagen">
-                <img src="../assets/images/illustrated/book-one.png" alt="" />
-              </div>
-            </div>
-
-            <!-- Seccion inferior de la carta -->
-            <div class="carta-footer">
-              <div class="carta-footer__botones">
-                <a
-                  class="carta-footer__botones carta-footer__botones--cancelar"
-                  href="item.html"
-                  >BORRAR</a
-                >
-                <input
-                  class="carta-footer__botones carta-footer__botones--boton"
-                  type="submit"
-                  value="EDITAR"
-                />
-              </div>
-            </div>
-          </div>
-          <!-- FIN Carta para listar elementos -->
-
-          <!-- Carta para listar elementos -->
-          <div class="carta">
-            <!-- Seccion superior de la carta -->
-            <div class="carta-header">
-              <div class="carta-header__texto">
-                <p class="carta-header__texto carta-header__texto--titulo">
-                  Nombre del Articulo
-                </p>
-                <p class="carta-header__texto carta-header__texto--subtitulo">
-                  Nombre del Autor
-                </p>
-              </div>
-            </div>
-
-            <!-- Seccion central de la carta -->
-            <div class="carta-body">
-              <div class="carta-body__imagen">
-                <img src="../assets/images/illustrated/book-one.png" alt="" />
-              </div>
-            </div>
-
-            <!-- Seccion inferior de la carta -->
-            <div class="carta-footer">
-              <div class="carta-footer__botones">
-                <a
-                  class="carta-footer__botones carta-footer__botones--cancelar"
-                  href="item.html"
-                  >BORRAR</a
-                >
-                <input
-                  class="carta-footer__botones carta-footer__botones--boton"
-                  type="submit"
-                  value="EDITAR"
-                />
-              </div>
-            </div>
-          </div>
-          <!-- FIN Carta para listar elementos -->
-
-          <!-- Carta para listar elementos -->
-          <div class="carta">
-            <!-- Seccion superior de la carta -->
-            <div class="carta-header">
-              <div class="carta-header__texto">
-                <p class="carta-header__texto carta-header__texto--titulo">
-                  Nombre del Articulo
-                </p>
-                <p class="carta-header__texto carta-header__texto--subtitulo">
-                  Nombre del Autor
-                </p>
-              </div>
-            </div>
-
-            <!-- Seccion central de la carta -->
-            <div class="carta-body">
-              <div class="carta-body__imagen">
-                <img src="../assets/images/illustrated/book-one.png" alt="" />
-              </div>
-            </div>
-
-            <!-- Seccion inferior de la carta -->
-            <div class="carta-footer">
-              <div class="carta-footer__botones">
-                <a
-                  class="carta-footer__botones carta-footer__botones--cancelar"
-                  href="item.html"
-                  >BORRAR</a
-                >
-                <input
-                  class="carta-footer__botones carta-footer__botones--boton"
-                  type="submit"
-                  value="EDITAR"
-                />
-              </div>
-            </div>
-          </div>
-          <!-- FIN Carta para listar elementos -->
+          <!-- FIN Recuadro que contiene a todos los elementos del formulario -->
         </div>
-        <!-- FIN Grilla dinamica -->
+        <!-- FIN Formulario para creación de Articulos -->
       </div>
+      <!-- FIN Parte superior (Migas de pan y botones) -->
+      <span v-for="articulo in articulos" :key="articulo.id">
+        <div class="seccion-central">
+          <!-- Grilla dinamica -->
+          <div class="grilla-responsive">
+            <!-- Carta para listar elementos -->
+
+            <div class="carta">
+              <!-- Seccion superior de la carta -->
+              <div class="carta-header">
+                <div class="carta-header__texto">
+                  <p class="carta-header__texto carta-header__texto--titulo">
+                    {{ articulo.nombre }}
+                  </p>
+                  <p class="carta-header__texto carta-header__texto--titulo">
+                    {{ articulo.nombre_autor }}
+                  </p>
+                </div>
+              </div>
+
+              <!-- Seccion central de la carta -->
+              <div class="carta-body">
+                <div class="carta-body__imagen">
+                  <img src="../assets/images/illustrated/book-one.png" alt="" />
+                </div>
+              </div>
+
+              <!-- Seccion inferior de la carta -->
+              <div class="carta-footer">
+                <div class="carta-footer__botones">
+                  <button
+                    class="carta-footer__botones carta-footer__botones--cancelar"
+                    @click="borrar(articulo.id)"
+                  >
+                    BORRAR
+                  </button>
+                  <input
+                    class="carta-footer__botones carta-footer__botones--boton"
+                    @click="
+                      formEditar(
+                        articulo.id,
+                        articulo.nombre,
+                        '0',
+                        articulo.nombre_editorial,
+                        articulo.nombre_autor,
+                        articulo.nombre_categoria,
+                        articulo.isbn
+                      )
+                    "
+                    type="submit"
+                    value="EDITAR"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- FIN Carta para listar elementos -->
+          </div>
+          <!-- FIN Grilla dinamica -->
+        </div>
+      </span>
       <!-- FIN Contenido luego de las migas de pan (Cartas) -->
     </main>
     <!-- FIN Contenido principal de la pagina -->
   </div>
 </template>
 <script>
-import SideBar from '../components/sidebar.vue'
+import SideBar from "../components/sidebar.vue";
 
 export default {
   components: {
-    SideBar
-  }
-}
+    SideBar,
+  },
+  data() {
+    return {
+      url: "http://localhost:3000/api/articulos/",
+      articulos: [],
+      operacion: "",
+      activar: false,
+      articulo: {
+        id: null,
+        nombre: "",
+        prestamo: "",
+        nombre_editorial: "",
+        nombre_autor: "",
+        nombre_categoria: "",
+        isbn: "",
+      },
+    };
+  },
+  created() {
+    this.mostrar();
+  },
+  methods: {
+    mostrar() {
+      this.axios.get(this.url).then((response) => {
+        this.articulos = response.data;
+      });
+    },
+    borrar(id) {
+      this.axios.delete(this.url + id).then((response) => {
+        this.mostrar();
+      });
+    },
+    crear () {
+      let parametros = {
+        nombre: this.articulo.nombre,
+        prestamo: '0',
+        nombre_editorial: this.articulo.nombre_editorial,
+        nombre_autor: this.articulo.nombre_autor,
+        nombre_categoria: this.articulo.nombre_categoria,
+        isbn: this.articulo.isbn,
+      };
+      this.axios.post(this.url, parametros).then((response) => {
+        this.mostrar();
+      });
+      this.articulo.nombre = "";
+      this.articulo.prestamo= "";
+      this.articulo.nombre_editorial = "";
+      this.articulo.nombre_autor = "";
+      this.articulo.nombre_categoria = "";
+      this.articulo.isbn = "";
+    },
+    editar () {
+      let parametros = {
+        nombre: this.articulo.nombre,
+        prestamo: this.articulo.prestamo,
+        nombre_editorial: this.articulo.nombre_editorial,
+        nombre_autor: this.articulo.nombre_autor,
+        nombre_categoria: this.articulo.nombre_categoria,
+        isbn: this.articulo.isbn,
+        id: this.articulo.id,
+      };
+      this.axios.put(this.url + this.articulo.id, parametros).then((response) => {
+        this.mostrar();
+      });
+    },
+    //formularios y botones
+    guardar() {
+      if (this.operacion == "crear") {
+        this.crear();
+      }
+      if (this.operacion == "editar") {
+        this.editar();
+      }
+      this.activar = false;
+    },
+    cancelar() {
+      this.activar = false;
+    },
+    formNuevo() {
+      this.activar = true;
+      this.operacion = "crear";
+      this.articulo.nombre = "";
+      this.articulo.prestamo = "0";
+      this.articulo.nombre_editorial = "";
+      this.articulo.nombre_autor = "";
+      this.articulo.nombre_categoria = "";
+      this.articulo.isbn = "";
+    },
+    formEditar(
+      id,
+      nombre,
+      prestamo,
+      nombre_editorial,
+      nombre_autor,
+      nombre_categoria,
+      isbn
+    ) {
+      this.articulo.id = id;
+      this.articulo.nombre = nombre;
+      this.articulo.prestamo = prestamo;
+      this.articulo.nombre_editorial = nombre_editorial;
+      this.articulo.nombre_autor = nombre_autor;
+      this.articulo.nombre_categoria = nombre_categoria;
+      this.articulo.isbn = isbn;
+      this.activar = true;
+      this.operacion = "editar";
+    },
+  },
+};
 </script>

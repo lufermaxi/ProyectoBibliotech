@@ -131,7 +131,7 @@ app.get('/api/articulos', (req, res)=>{
 
 // crear informacion
 app.post('/api/articulos', (req, res)=>{
-    let data = {id: req.body.id, nombre: req.body.nombre, prestamo: req.body.prestamo, nombre_editorial: req.body.nombre_editorial, nombre_autor: req.body.nombre_autor, nombre_categoria: req.body.nombre_categoria};
+    let data = {id: req.body.id, nombre: req.body.nombre, prestamo: req.body.prestamo, nombre_editorial: req.body.nombre_editorial, nombre_autor: req.body.nombre_autor, nombre_categoria: req.body.nombre_categoria, isbn: req.body.isbn};
     let sql = "INSERT INTO articulos SET ?";
     conexion.query(sql, data, (error, results)=>{
         if (error) {
@@ -152,8 +152,9 @@ app.put('/api/articulos/:id', (req, res)=>{
     let nombre_editorial = req.body.nombre_editorial; 
     let nombre_autor =  req.body.nombre_autor; 
     let nombre_categoria = req.body.nombre_categoria;
-    let sql = "UPDATE articulos SET nombre = ?, prestamo = ?, nombre_editorial = ?, nombre_autor = ?, nombre_categoria = ? where id = ?";
-    conexion.query(sql, [nombre, prestamo, nombre_editorial, nombre_autor, nombre_categoria, id], (error, results)=>{
+    let isbn = req.body.isbn
+    let sql = "UPDATE articulos SET nombre = ?, prestamo = ?, nombre_editorial = ?, nombre_autor = ?, nombre_categoria = ?, isbn = ? where id = ?";
+    conexion.query(sql, [nombre, prestamo, nombre_editorial, nombre_autor, nombre_categoria, isbn, id], (error, results)=>{
         if (error) {
             throw error;
         }else{
