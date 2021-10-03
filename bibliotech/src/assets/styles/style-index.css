@@ -14,7 +14,7 @@ Variaciones de transparencia:
 
 */
 
-/*Área de NavBar estilos solo aquí*/
+/*Área de NavBar estilos solo aquí----------------------------------*/
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -90,7 +90,7 @@ Variaciones de transparencia:
 .login-bar>a:hover{
     color: #003582;
 }
-/*Fin de área de NavBar*/
+/*Fin de área de NavBar-----------------------------------------*/
 
 /*Área de línea de sepración*/
 .line-container{

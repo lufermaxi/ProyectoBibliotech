@@ -7,7 +7,7 @@
           <h1>¡Bienvenido!</h1>
           <h3>a nuestro sistema bibliotecario</h3>
       </div>
-      <b-container class="wrapper-main" fluid>
+      <b-container fluid>
         <!--Sección para imagen central de los libros de Bibliotech-->
         <b-row class="banner-image">
           <b-col cols="12" md="12" lg="6">
