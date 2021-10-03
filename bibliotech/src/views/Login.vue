@@ -29,20 +29,21 @@
             </div>
             <!-- Contenedor inferior de la tarjeta blanca -->
             <div class="login-botones d-flex justify-content-between mt-4">
+              <!-- enlace para recuperar contraseña -->
               <div class="forgot">
                 <a href="">¿Olvidó su contraseña?</a>
               </div>
-
+              <!-- boton de validacion -->
               <div class="boton-login">
                 <b-button class="boton__entrar border-0" >Entrar</b-button>
               </div>
             </div>
           </div>
+          <!-- atribucion de creative commons  -->
           <div class="cc-footer d-flex justify-content-end">
-              <p>©2021 Bibliotech</p>
-            </div>
+            <p>©2021 Bibliotech</p>
+          </div>
         </b-container>
-        
       </div>
     </div>
   </div>
