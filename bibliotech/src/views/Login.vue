@@ -35,7 +35,7 @@
               </div>
               <!-- boton de validacion -->
               <div class="boton-login">
-                <b-button class="boton__entrar border-0" >Entrar</b-button>
+                <b-button class="boton__entrar border-0" to="Newer">Entrar</b-button>
               </div>
             </div>
           </div>
