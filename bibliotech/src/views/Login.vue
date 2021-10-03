@@ -3,7 +3,7 @@
     <!-- Imagen de fondo -->
     <div class="vw-100 fondo-login">
       <!-- Color azul que cubre al fondo -->
-      <div class="vh-100 recubrimiento">
+      <div class="vh-100 recubrimiento d-flex justify-content-center">
         <!-- Contenedor invisible principal -->
         <b-container class="d-flex justify-content-center h-100">
           <!-- Tarjeta blanca -->
@@ -36,10 +36,13 @@
               <div class="boton-login">
                 <b-button class="boton__entrar border-0" >Entrar</b-button>
               </div>
-
             </div>
           </div>
+          <div class="cc-footer d-flex justify-content-end">
+              <p>©2021 Bibliotech</p>
+            </div>
         </b-container>
+        
       </div>
     </div>
   </div>
@@ -102,5 +105,18 @@
 }
 .boton__entrar:hover {
     background-color: #990000;
+}
+.cc-footer {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+.cc-footer p {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: #ffffff;
 }
 </style>
