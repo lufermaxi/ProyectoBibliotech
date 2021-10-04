@@ -96,7 +96,7 @@ Variaciones de transparencia:
 .line-container{
     background-color: #003582;
     text-align: center;
-    margin: 0;
+    margin-top: -0.4%;
 }
 
 .line-container h1{
@@ -230,20 +230,19 @@ Variaciones de transparencia:
     }
 }
 
-.info-foot h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 0.9rem;
-    color: #FFF;
-    
-}
-
 .info-foot h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 0.8rem;
     color: #FFF;
 
+}
+
+.contact{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #FFF;
 }
 
 .icons-foot{

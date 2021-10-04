@@ -7,7 +7,7 @@
         <h1>Solicitud</h1>
         <h3>de libro en préstamo</h3>
       </div>
-      <b-container b-container fluid>
+      <b-container fluid>
         <div class="box-search">
           <div class="search-text">
             <label for="search-book">Búsqueda de artículos</label>

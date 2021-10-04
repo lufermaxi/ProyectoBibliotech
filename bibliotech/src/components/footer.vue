@@ -9,13 +9,13 @@
             </b-col>
             <b-col cols="12" md="6" lg="3" class="info-foot">
                <!--Info de creación-->
-              <h2>Contáctanos:</h2>
               <h3>© Bibliotech 2021</h3>
               <h3>--Todos los derechos reservados--</h3>
               <h3>Cookies & privacy policy</h3>
             </b-col>
             <b-col cols="12" md="6" lg="3" class="icons-foot">
                <!--Lista de íconos-->
+              <h2 class="contact">Contáctanos:</h2>
               <a href="https://github.com/afar-cmyk/ProyectoBibliotech">
                 <b-icon class="git-icon" icon="github"></b-icon>
               </a>
