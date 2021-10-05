@@ -1,84 +1,112 @@
-<template>
+<template >
   <div>
-    <!-- Capa de color azul que cubre a la imagen de fondo -->
-    <div class="recubrimiento"></div>
-
-    <!-- Contenedor central blanco -->
-    <main class="contenedor-login">
-      <!-- Contenedor de los elementos de Login -->
-      <div class="caja-login">
-        <!-- Contenedor del logo -->
-        <div class="contenedor-logo">
-          <img src="../assets/images/logo-minimal.png" alt="" />
-        </div>
-
-        <!-- Cajas de Texto -->
-        <div class="prueba-material">
-          <form action="#">
-            <!-- Nombre de usuario -->
-            <div
-              class="
-                mdl-textfield mdl-js-textfield
-                mdl-textfield--floating-label
-              "
-            >
-              <input class="mdl-textfield__input" type="text" id="sample3" />
-              <label class="mdl-textfield__label" for="sample3"
-                >Nombre de usuario</label
-              >
+    <!-- Imagen de fondo -->
+    <div class="vw-100 fondo-login">
+      <!-- Color azul que cubre al fondo -->
+      <div class="vh-100 recubrimiento d-flex justify-content-center">
+        <!-- Contenedor invisible principal -->
+        <b-container class="d-flex justify-content-center h-100">
+          <!-- Tarjeta blanca -->
+          <div class="contenedor-login ">
+            <!-- Contenedor superior de la tarjeta blanca -->
+            <div class="login-header mb-4">
+              <img src="../assets/images/logo-minimal.png" alt="" fluid class="logo"/>
             </div>
-
-            <br />
-
-            <!-- Contraseña -->
-            <div
-              class="
-                mdl-textfield mdl-js-textfield
-                mdl-textfield--floating-label
-              "
-            >
-              <input
-                class="mdl-textfield__input"
-                type="password"
-                id="sample3"
-              />
-              <label class="mdl-textfield__label" for="sample3"
-                >Contraseña</label
-              >
-            </div>
-
-            <br />
-
-            <div class="elementos-complementarios">
-              <div class="forgot">
-                <router-link to="Login">¿Olvidó su contraseña?</router-link>
+            <!-- Contenedor central de la tarjeta blanca -->
+            <div class="login-inputs">
+              <!-- Nombre de usuario -->
+              <div class="form-floating mb-3">
+                <input type="username" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="text-secondary">Nombre de usuario</label>
+                <b-form-text id="tags-remove-on-delete-help">Ingrese su nombre de usuario o e-mail</b-form-text>
               </div>
-
-              <!-- Botón material (getmdl.io) -->
-              <div class="contenedor-boton">
-                <div class="boton-login">
-                  <!-- Accent-colored raised button with ripple -->
-                  <button
-                    class="
-                      mdl-button mdl-js-button
-                      mdl-button--raised
-                      mdl-js-ripple-effect
-                      mdl-button--accent
-                    "
-                    type="button"
-                  >
-                    <router-link to="Newer">Entrar</router-link>
-                  </button>
-                </div>
+              <!-- Contraseña -->
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword" class="text-secondary">Contraseña</label>
+                <b-form-text id="tags-remove-on-delete-help">Ingrese su contraseña</b-form-text>
               </div>
             </div>
-          </form>
-        </div>
+            <!-- Contenedor inferior de la tarjeta blanca -->
+            <div class="login-botones d-flex justify-content-end mt-4">
+              <!-- boton de validacion -->
+              <div class="boton-login">
+                <b-button class="boton__entrar border-0" to="Newer">Entrar</b-button>
+              </div>
+            </div>
+          </div>
+          <!-- atribucion de creative commons  -->
+          <div class="cc-footer d-flex justify-content-end">
+            <p>©2021 Bibliotech</p>
+          </div>
+        </b-container>
       </div>
-
-      <div class="cc-footer">
-        <p>©2021 Bibliotech</p>
-      </div>
-    </main>
+    </div>
   </div>
 </template>
+
+<style scoped>
+.fondo-login {
+  background-image: url("../assets/images/bg-img.jpg");
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.recubrimiento {
+  background-color: #003482ea;
+  z-index: 2;
+}
+.contenedor-login {
+  background-color: #ffffff;
+  z-index: 3;
+  border-radius: 14px;
+  width: 440px;
+  height: 480px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.logo {
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.login-inputs{
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.login-botones{
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.boton__entrar{
+  background-color: #C30000;
+}
+.boton__entrar:hover {
+    background-color: #990000;
+}
+.cc-footer {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+.cc-footer p {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: #ffffff;
+}
+</style>
