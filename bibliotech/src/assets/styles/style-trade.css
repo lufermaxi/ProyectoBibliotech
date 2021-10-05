@@ -64,20 +64,10 @@ Variaciones de transparencia:
     margin-bottom: 1rem;
 }
 
-.form-control{
-    border: 1px solid #ff3000 !important;
-}
-
 .button{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
-
-.btn-secondary{
-    background-color: #485eb2 !important;
-    border: 1px solid #485eb2 !important;
-}
-
 
 /*Área de fila de libros formato ILUSTRADOS OJO (SOLO ESTILO PARA ESTA FILA)*/
 .row-books{

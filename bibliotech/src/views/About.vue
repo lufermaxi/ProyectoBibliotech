@@ -92,3 +92,29 @@ export default {
   }
 }
 </script>
+<style scoped>
+.rows-news{
+    background-color: #f3f3f3 !important;
+}
+.row-news1{
+    margin-top: 4rem !important;
+    padding: 1rem;
+}
+.news1-bibliotech{
+    border: none !important;
+}
+.news3-how{
+    margin-top: 3rem;
+    border: none !important;
+}
+.news4-prog{
+    margin-top: 3rem;
+    border: none !important;
+}
+.card{
+    background-color: #f3f3f3 !important;
+}
+.news2-text{
+    border: none !important;
+}
+</style>

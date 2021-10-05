@@ -18,13 +18,13 @@
               <div class="form-floating mb-3">
                 <input type="username" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput" class="text-secondary">Nombre de usuario</label>
-                <b-form-text id="tags-remove-on-delete-help">Ingrese su nombre de usuario o e-mail</b-form-text>
+                <b-form-text class="subtitulo" id="tags-remove-on-delete-help">Ingrese su nombre de usuario o e-mail</b-form-text>
               </div>
               <!-- Contraseña -->
               <div class="form-floating">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword" class="text-secondary">Contraseña</label>
-                <b-form-text id="tags-remove-on-delete-help">Ingrese su contraseña</b-form-text>
+                <b-form-text class="subtitulo" id="tags-remove-on-delete-help">Ingrese su contraseña</b-form-text>
               </div>
             </div>
             <!-- Contenedor inferior de la tarjeta blanca -->
@@ -83,8 +83,14 @@
   padding: 10px;
 }
 .login-inputs{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
   padding-left: 65px;
   padding-right: 65px;
+}
+.subtitulo{
+  font-weight: 300;
+  font-size: 0.75rem;
 }
 .login-botones{
   padding-left: 65px;
@@ -92,6 +98,9 @@
 }
 .boton__entrar{
   background-color: #C30000;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 18px;
 }
 .boton__entrar:hover {
     background-color: #990000;
@@ -106,7 +115,7 @@
 .cc-footer p {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   color: #ffffff;
 }
 </style>

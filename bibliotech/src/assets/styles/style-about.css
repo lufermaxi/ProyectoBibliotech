@@ -17,22 +17,9 @@ Variaciones de transparencia:
 
 /*Primera fila de noticias*/
 
-.rows-news{
-    background-color: #f3f3f3 !important;
-}
-
-.row-news1{
-    margin-top: 4rem !important;
-    padding: 1rem;
-}
-
 .row-news2{
     margin-bottom: 4rem;
     padding: 1rem;
-}
-
-.news1-bibliotech{
-    border: none !important;
 }
 
 .news1-bibliotech img{
@@ -43,14 +30,6 @@ Variaciones de transparencia:
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     color: #FFF;
-}
-
-.card{
-    background-color: #f3f3f3 !important;
-}
-
-.news2-text{
-    border: none !important;
 }
 
 .news2-text p{
@@ -66,11 +45,6 @@ Variaciones de transparencia:
     color: #003582;
 }
 
-.news3-how{
-    margin-top: 3rem;
-    border: none !important;
-}
-
 .news3-how img{
     filter: brightness(60%);
 }
@@ -82,11 +56,6 @@ Variaciones de transparencia:
     font-size: 0.9rem;
     color: #FFF;
     margin-top: 5rem;
-}
-
-.news4-prog{
-    margin-top: 3rem;
-    border: none !important;
 }
 
 .news4-prog img{

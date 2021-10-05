@@ -218,3 +218,12 @@ export default {
   },
 };
 </script>
+<style scoped>
+.form-control{
+    border: 1px solid #ff3000 !important;
+}
+.btn-secondary{
+    background-color: #485eb2 !important;
+    border: 1px solid #485eb2 !important;
+}
+</style>
