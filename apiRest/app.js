@@ -102,15 +102,34 @@ app.delete('/api/:correo', (req, res)=>{
 
 //------------------------------------------------------------administrador---------------------------------------
 //------------------------------------------------------------login---------------------------------------
-
-app.get('/api/login/:correo', (req, res)=>{
+/*
+app.post('/api/login', (req, res)=>{
     conexion.query('SELECT correo FROM usuarios where correo = ?', [req.params.correo],(error, fila)=>{
         if (error) {
+            
             throw error;
         }else{
             //res.send(fila);
-            res.send(fila[0].correo);
+            res.send(fila.);
             
+        }
+    })
+});
+*/
+
+app.post('/api/login', (req, res)=>{
+    let data = {usuario: req.body.usuario, contraseña: req.body.contraseña};
+    console.log(data.usuario)
+    console.log(data.contraseña)
+    
+    let sql = `SELECT * FROM usuarios where usuario = '${data.usuario}' and contraseña = '${data.contraseña}'`;
+    conexion.query(sql, data, (error, results)=>{
+        console.log(results)
+        if (results == '') {
+            console.log(error);
+            res.status(400).send("no esta");
+        } else {
+            res.status(200).send("si esta");
         }
     })
 });
@@ -123,6 +142,7 @@ app.get('/api/articulos', (req, res)=>{
         if (error) {
             throw error;
         }else{
+            console.log(filas)
             res.send(filas);
         }
     })
