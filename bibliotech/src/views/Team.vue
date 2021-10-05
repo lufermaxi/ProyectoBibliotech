@@ -8,115 +8,75 @@
         <h3>Conozca a nuestro equipo</h3>
       </div>
       <!--Inicio contenido información de las personas del equipo-->
-      <section class="wrapper-main">
-        <div class="info-team">
-          <div class="team-one">
-            <div class="ph">
-              <img src="../assets/images/ex-photo-man.jpg" alt="Foto Andrés">
-            </div>
-            <h3 class="name">
-              Andrés Felipe Álvarez &nbsp;
-            </h3>
-            <p class="info">
-              Tecnólogo en producción de Multimedia, apasionado por la fotografía y el diseño
-            </p>
-            <h4 class="occupation">
-              Creative leader
-            </h4>
-            <h4 class="occupation">
-              Scrum: Product owner, Developer team
-            </h4>
-            <div class="contact-team">
-              <p>Conoce más</p>
-              <a href="">+</a>
-            </div>
-          </div>
-          <div class="team-two">
-            <div class="ph">
-              <img src="../assets/images/ex-photo-man.jpg" alt="Foto Esteban">
-            </div>
-            <h3 class="name">
-              Juan Esteban Castiblanco
-            </h3>
-            <p class="info">
-              Estudiante de economía e Ingeniería estadística
-            </p>
-            <h4 class="occupation">
-              Sales Manager
-            </h4>
-            <h4 class="occupation">
-              Scrum: Developer team
-            </h4>
-            <div class="contact-team">
-              <p>Conoce más</p>
-              <a href="">+</a>
-            </div>
-          </div>
-          <div class="team-three">
-            <div class="ph">
-              <img src="../assets/images/ex-photo-woman.jpg" alt="Foto Kelly">
-            </div>
-            <h3 class="name">
-              Kelly Monroy Carrillo &nbsp;&nbsp;
-            </h3>
-            <p class="info">
-              Diseñadora digital y multimedia, ilustradora y artista
-            </p>
-            <h4 class="occupation">
-              Web designer
-            </h4>
-            <h4 class="occupation">
-              Scrum: Developer team
-            </h4>
-            <div class="contact-team">
-              <p>Conoce más</p>
-              <a href="">+</a>
-            </div>
-          </div>
-          <div class="team-four">
-            <div class="ph">
-              <img src="../assets/images/ex-photo-man.jpg" alt="Foto John">
-            </div>
-            <h3 class="name">
-              John Stiven Vásquez &nbsp;&nbsp;
-            </h3>
-            <p class="info">
-              Estudiante universitario interesado en la programación y con experiencia en Java
-            </p>
-            <h4 class="occupation">
-              Web developer
-            </h4>
-            <h4 class="occupation">
-              Scrum: Scrum master, developer team
-            </h4>          
-            <div class="contact-team">
-              <p>Conoce más</p>
-              <a href="">+</a>
-            </div>
-          </div>
-          <div class="team-five">
-            <div class="ph">
-              <img src="../assets/images/ex-photo-man.jpg" alt="Foto Luis">
-            </div>
-            <h3 class="name">
-              Luis Fernando Delgado
-            </h3>
-            <p class="info">
-              Estudiante...
-            </p>
-            <h4 class="occupation">
-              Web developer
-            </h4>
-            <h4 class="occupation">
-              Scrum: Product owner, developer team
-            </h4>
-            <div class="contact-team">
-              <p>Conoce más</p>
-              <a href="">+</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <b-container fluid>
+        <b-row class="row-team">
+          <b-col cols="12" md="12" lg="3">
+            <b-card>
+              <div class="team-one">
+                <b-img :src="require('../assets/images/ex-photo-man.jpg')" />
+                <b-text>
+                  <h4 class="name">Andrés Felipe Álvarez</h4>
+                  <p class="info">Tecnólogo en producción de Multimedia, apasionado por la fotografía y el diseño</p>
+                  <h5 class="occupation">Desarrollador backend y frontend, diseñador web</h5>
+                  <b-button class="contact-team">Contacto</b-button>
+                </b-text>
+              </div>
+            </b-card>
+          </b-col>
+          <b-col cols="12" md="12" lg="2" class="team-two">
+             <b-card>
+              <div class="team-two">
+                <b-img :src="require('../assets/images/ex-photo-man.jpg')" />
+                <b-text>
+                  <h4 class="name">Juan Esteban Castiblanco</h4>
+                  <p class="info">Estudiante de economía e Ingeniería estadística</p>
+                  <h5 class="occupation">Desarrollador backend</h5>
+                  <b-button class="contact-team">Contacto</b-button>
+                </b-text>
+              </div>
+            </b-card>
+          </b-col>
+          <b-col cols="12" md="12" lg="2">
+             <b-card>
+              <div class="team-three">
+                <b-img :src="require('../assets/images/ex-photo-woman.jpg')" />
+                <b-text>
+                  <h4 class="name">Kelly Monroy Carrillo</h4>
+                  <p class="info">Diseñadora digital y multimedia, ilustradora y artista</p>
+                  <h5 class="occupation">Diseñadora web y desarrolladora frontend</h5>
+                  <b-button class="contact-team">Contacto</b-button>
+                </b-text>
+              </div>
+            </b-card>
+          </b-col>
+          <b-col cols="12" md="12" lg="2">
+             <b-card>
+              <div class="team-four">
+                <b-img :src="require('../assets/images/ex-photo-man.jpg')" />
+                <b-text>
+                  <h4 class="name">John Stiven Vásquez</h4>
+                  <p class="info">Estudiante universitario interesado en la programación y con experiencia en Java</p>
+                  <h5 class="occupation">Desarrollador backend, bases de datos</h5>
+                  <b-button class="contact-team">Contacto</b-button>
+                </b-text>
+              </div>
+            </b-card>
+          </b-col>
+          <b-col cols="12" md="12" lg="3">
+             <b-card>
+              <div class="team-five">
+                <b-img :src="require('../assets/images/ex-photo-man.jpg')" />
+                <b-text>
+                  <h4 class="name">Luis Fernando Delgado</h4>
+                  <p class="info">Estudiante de programación con habilidad en el manejo de sistemas: hardware y software</p>
+                  <h5 class="occupation">Desarrollador backend y web</h5>
+                  <b-button class="contact-team">Contacto</b-button>
+                </b-text>
+              </div>
+            </b-card>
+          </b-col>
+        </b-row>
+      </b-container>
     <!--Fin contenido del equipo-->
     </main>
     <Footer />

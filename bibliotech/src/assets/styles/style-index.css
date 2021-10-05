@@ -14,8 +14,8 @@ Variaciones de transparencia:
 
 */
 
-/*Área de encabezado*/
-.header-section{
+/*Área de NavBar estilos solo aquí----------------------------------*/
+.header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -29,13 +29,6 @@ Variaciones de transparencia:
     margin-left: 1%;
 }
 
-.bar{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -43,13 +36,29 @@ Variaciones de transparencia:
     align-items: center;
 }
 
+.navbar{
+    padding: 0rem !important;
+}
+
+/*Lo tomé del navegador porque no sabía cómo :)*/
+@media (min-width: 768px){
+.navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-direction: column;
+    align-items: flex-end;
+}}
+
+
 .login-bar{
     width: 100px;
     background-color: #485eb2;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 8px solid #001154;
+    line-height: 4.5rem;
+    background-color: #485eb2;
+    border-bottom: 10px solid #001154;
     border-left: 8px solid #001154;
 }
 
@@ -59,7 +68,6 @@ Variaciones de transparencia:
     font-size: 1rem;
     text-decoration: none;
     color: #FFF;
-
 }
 .nav-bar>a{
     font-family: 'Work Sans', sans-serif;
@@ -67,6 +75,11 @@ Variaciones de transparencia:
     font-size: 1rem;
     text-decoration: none;
     color: #ff3000;
+}
+
+.navbar-light .navbar-toggler{
+    color: #001154 !important;
+    font-size: 1.6rem;
 }
 
 /*Efectos mouse*/
@@ -77,11 +90,10 @@ Variaciones de transparencia:
 .login-bar>a:hover{
     color: #003582;
 }
-/*Fin de área de encabezado*/
+/*Fin de área de NavBar-----------------------------------------*/
 
 /*Área de línea de sepración*/
 .line-container{
-    width: 100%;
     background-color: #003582;
     text-align: center;
     margin-top: -0.4%;
@@ -108,32 +120,46 @@ Variaciones de transparencia:
 
 /*Contenedor principal*/
 .wrapper-main{
-    max-width: 90%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
 /*Área de banner de libros, saludo y redirección a préstamo*/
 .banner-image{
-    display: block;
-    text-align: center;
-    margin-top: 3%;
+    width: fit-content;
+}
+
+.banner-image1{
+    width: 100%;
+}
+
+.banner-image2{
+    width: 100%;
+}
+
+@media (min-width: 1280px){
+    .banner-image{
+        width: 100%;
+        padding: 0rem;
+        text-align: center;
+    }
 }
 
 .banner-text{
     display: block;
+    width: 28%;
     text-align: center;
     position: relative; z-index: 1;
-    width: 15%; /*Este porcentaje se apmlía según el tamaño de página*/
+    background-color: #ff3000;
+    bottom: 6rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.5%;
-    background-color: #ff3000;
 }
 
 .button-solitude{
     background-color: #ff6c38;
-    padding: 2%;
+    padding: 1.3rem;
     border-radius: 3px;
 }
 
@@ -154,7 +180,7 @@ Variaciones de transparencia:
     font-weight: 700;
     font-size: 1.8rem;
     color: #FFF;
-    margin: 2%;
+    margin: 0.8rem;
 }
 
 .banner-text h5{
@@ -162,74 +188,76 @@ Variaciones de transparencia:
     font-weight: 300;
     font-size: 1.1rem;
     color: #FFF;
-    margin: 2%;
+    margin: 0.8rem;
 }
 
 /*Fin de área de banner*/
 
-/*Área de footer*/
-
-.footer-section{
-    margin-top: 5%;
-    display: flex;
-}
+/*Área de footer único en esta hoja de estilos*/
 
 .blue-1{
     background-color: #003582;
-    display: flex;
-    justify-content: space-around;
-    width: 95%;
+    text-align: center;
+}
+
+.orange-2{
+    background-color: #ff6c38;
+}
+
+.orange-3{
+    background-color: #ff3000;
+}
+
+.orange-4{
+    background-color: #c30000;
 }
 
 .logo-foot{
-    width: auto;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    padding-right: 3%;
-    border-right: 3px solid #FFF;
+    width: 100;
+    align-self: center;
+    padding: 1rem;
 }
 
 .info-foot{
-    width: 20%;
-    margin-top: 3%;
+    align-self: center;
+    padding: 1rem;
+    border-right: 2px solid #FFF;
 }
 
-.info-foot h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 1.1rem;
-    color: #FFF;
-    
+@media (max-width: 960px){
+    .info-foot{
+        border-right: 0px;
+    }
 }
 
 .info-foot h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+    font-size: 0.8rem;
+    color: #FFF;
+
+}
+
+.contact{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 0.9rem;
     color: #FFF;
-    
 }
 
 .icons-foot{
-    width: 20%;
-    display: flex;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    padding: 3%;
-    border-right: 3px solid #FFF;
-}
-
-.icons-foot ul li{
-    list-style: none;
+    align-self: center;
+    padding: 1rem;
 }
 
 .icons-foot a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 2rem;
     text-decoration: none;
+    text-align: center;
     color: #FFF;
-    margin-right: 30px;
+    padding: 1rem;
 }
 
 .icons-foot a:hover{
@@ -237,15 +265,12 @@ Variaciones de transparencia:
 }
 
 .nav-foot{
-    width: 20%;
-    display: inline-block;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    align-self: center;
+    padding: 1rem;
 }
 
 .nav-foot ul li{
     list-style: none;
-    border-bottom: 1px solid #FFF;
 }
 
 .nav-foot a{
@@ -254,26 +279,12 @@ Variaciones de transparencia:
     font-size: 0.9rem;
     text-decoration: none;
     color: #FFF;
+    border-bottom: 0.2rem solid #FFF;
 }
 
 .nav-foot a:hover{
     color: #001154;
+    border-bottom: 0.2rem solid #001154;
 }
-
-.orange-2{
-    background-color: #ff6c38;
-    width: 5%;
-}
-
-.orange-3{
-    background-color: #ff3000;
-    width: 5%;
-}
-
-.orange-4{
-    background-color: #c30000;
-    width: 5%;
-}
-
 /*Fin de área de footer*/
 
