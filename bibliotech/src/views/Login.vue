@@ -28,11 +28,7 @@
               </div>
             </div>
             <!-- Contenedor inferior de la tarjeta blanca -->
-            <div class="login-botones d-flex justify-content-between mt-4">
-              <!-- enlace para recuperar contraseña -->
-              <div class="forgot">
-                <a href="">¿Olvidó su contraseña?</a>
-              </div>
+            <div class="login-botones d-flex justify-content-end mt-4">
               <!-- boton de validacion -->
               <div class="boton-login">
                 <b-button class="boton__entrar border-0" to="Newer">Entrar</b-button>
@@ -93,13 +89,6 @@
 .login-botones{
   padding-left: 65px;
   padding-right: 65px;
-}
-.forgot {
-  font-family: "Roboto";
-  color: blue;
-  display: flex;
-  font-size: 0.75rem;
-  align-items: center;
 }
 .boton__entrar{
   background-color: #C30000;
