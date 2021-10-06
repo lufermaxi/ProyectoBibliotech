@@ -16,13 +16,13 @@
             <div class="login-inputs">
               <!-- Nombre de usuario -->
               <div class="form-floating mb-3">
-                <input type="username" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="username" v-model="usuario" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput" class="text-secondary">Nombre de usuario</label>
                 <b-form-text class="subtitulo" id="tags-remove-on-delete-help">Ingrese su nombre de usuario o e-mail</b-form-text>
               </div>
               <!-- Contraseña -->
               <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" v-model="contraseña" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword" class="text-secondary">Contraseña</label>
                 <b-form-text class="subtitulo" id="tags-remove-on-delete-help">Ingrese su contraseña</b-form-text>
               </div>
@@ -31,7 +31,7 @@
             <div class="login-botones d-flex justify-content-end mt-4">
               <!-- boton de validacion -->
               <div class="boton-login">
-                <b-button class="boton__entrar border-0" to="Newer">Entrar</b-button>
+                <b-button class="boton__entrar border-0" @click="ingresar()">Entrar</b-button>
               </div>
             </div>
           </div>
@@ -44,6 +44,41 @@
     </div>
   </div>
 </template>
+
+<script>
+import Swal from "sweetalert2";
+
+export default {
+  data() {
+    return {
+      url: "http://localhost:3000/api/login/",
+      usuario: "",
+      contraseña: "",
+    };
+  },
+  methods: {
+    async ingresar() {
+      let parametros = { usuario: this.usuario, contraseña: this.contraseña };
+      console.log(this.contraseña);
+      await this.axios
+        .post(this.url, JSON.parse(JSON.stringify(parametros)))
+        .then((response) => {
+          console.log(response.status);
+          if (response.status == 200) {
+            this.$router.push("Newer");
+          }
+        })
+        .catch(() => {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Usuario y/o contraseña incorrectos",
+          });
+        });
+    },
+  },
+};
+</script>
 
 <style scoped>
 .fondo-login {
