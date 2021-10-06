@@ -70,26 +70,27 @@ Variaciones de transparencia:
 }
 
 /*Área de fila de libros formato ILUSTRADOS OJO (SOLO ESTILO PARA ESTA FILA)*/
+.title-format{
+    margin-top: 3rem;
+    background-color: #c30000;
+    padding: 0.2rem;
+}
+
 .row-books{
     width: auto;
     text-align: center;
     background-color: #F3F3F3;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 10rem;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .row-books img{
-    margin: 0.8rem;
+    margin: 0.7rem;
 }
 
 .row-books img:hover{
     box-shadow: 0.3rem 0.3rem 0.1rem #cccccc;
-}
-
-.title-format{
-    background-color: #c30000;
-    padding: 0.5rem;
 }
 
 .title-format>h3{
@@ -97,31 +98,67 @@ Variaciones de transparencia:
     font-weight: 900;
     font-size: 1.2rem;
     color: #FFF;
+    text-align: center;
+}
+
+.data-book{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data-book>h4{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #003582;
+    margin: 0.1rem;
+    padding: 0rem;
+}
+
+.data-book>h5{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: #ff3000;
+    color: #fff;
+    padding: 0rem;
 }
 
 /*Modal 1 solo cambia .modal-view*/
-.modal-view1{
-    background-color: #87cacc;
+.modal-view{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
 
-.view-image{
-    width: fit-content;
-    padding: 2rem;
+.modal-header{
+    background-color: #ff3000 !important;
+    border-bottom: none !important;
+}
+
+.close{
+    font-size: 2rem !important;
+    color: #FFF !important;
+    text-shadow: none !important;
+    opacity: none !important;
+    background-color: #ff6c38 !important;
+}
+
+.close:hover{
+    color: #001154 !important;
 }
 
 .info-book{
     padding: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: #FFF;
+    color: #003582;
 }
 
 .info-book b{
-    color: #001154;
+    color: #ff3000;
 }
 
 .btn-solitude{
@@ -130,11 +167,8 @@ Variaciones de transparencia:
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
-
-
 /*Modal 1 solo cambia .confirmed-box1*/
 .confirmed-box1{
-    background-color: #87cacc;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -151,97 +185,12 @@ Variaciones de transparencia:
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    color: #FFF;
+    color: #003582;
 }
 
 .confirmed-icon{
     font-size: 6rem;
-    color: #FFF;
+    color: rgb(115, 255, 0);
     border-radius: 10rem;
     text-align: center;
-}
-
-/*Modal 2*/
-.modal-view2{
-    background-color: #16595F;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.confirmed-box2{
-    background-color: #16595F;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-/*Modal 3*/
-.modal-view3{
-    background-color: #50C0D8;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.confirmed-box3{
-    background-color: #50C0D8;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-/*Modal 4*/
-.modal-view4{
-    background-color: #BF7256;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.confirmed-box4{
-    background-color: #BF7256;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-/*Modal 5*/
-.modal-view5{
-    background-color: #DEE442;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.confirmed-box5{
-    background-color: #DEE442;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-/*Modal 6*/
-.modal-view6{
-    background-color: #868D7E;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.confirmed-box6{
-    background-color: #868D7E;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
 }

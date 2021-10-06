@@ -1,0 +1,191 @@
+Libros de ilustración-------------------------:
+Título: Los cuentos como son
+Autor: Rudyard Kipling
+Año de publicación/versión: 2021
+Editorial: Alfaguara
+ISBN: 978-8-42045-665-2
+
+Título: Harry Potter: And the goblet of fire
+Autor: J.K. Rowling 
+Año de publicación/versión:2016 
+Editorial: Pottermore
+ISBN: 978-1-78110-567-2
+
+Título: The squirrels who squabbled
+Autor: Rachel Bright, Jim Field
+Año de publicación/versión: 2017
+Editorial: Orchard Books
+ISBN: 978-1-40834-048-6
+
+Título: Viaje al centro de la tierra
+Autor: Julio Verne
+Año de publicación/versión:2004
+Editorial: Panamericana Editorial
+ISBN: 978-9-58300-688-3
+
+Título: Writing the Future: <br>Basquiat and the Hip-Hop Generation
+Autor: Faith Almiron, etal.
+Año de publicación/versión: MFA Publications
+ISBN: 978-0-87846-871-3
+
+Título: Batman: Streets of Gotham 
+Autor: Paul Dini
+Año de publicación/versión: 2011
+Editorial: DC Comics
+ISBN: 978-1-40122-722-7 
+
+Libros académicos----------------------------:
+Título: Cosmos: Possibles worlds
+Autor: Ann Druyan
+Año de publicación/versión: 2020
+Editorial: National Geographic
+ISBN: 978-1-42621-908-5
+
+Título: La teoría del todo
+Autor: Stephen W. Hawking
+Año de publicación/versión: 2020
+Editorial: DeBolsillo
+ISBN: 978-8-48346-891-3
+
+Título: Inteligencia Artificial
+Autor: Neil Wilkins
+Año de publicación/versión: 2020
+Editorial: Bravex Publications
+ISBN: 978-1-64748-368-5
+
+Título: Inteligencia Artificial: 101 COSAS QUE DEBES SABER HOY SOBRE NUESTRO FUTURO
+Autor: Lasse Rouhiainen
+Año de publicación/versión: 2018
+Editorial: Editorial Planeta
+ISBN: 978-84-17568-08-5
+
+Título: El futuro de nuestra mente
+Autor: Michio Kaku
+Año de publicación/versión: 2014
+Editorial: DEBATE
+ISBN: 978-8-49992-392-5
+
+Título: Science & Technology
+Autor: Ravi Agrahari
+Año de publicación/versión: 2019
+Editorial: Mc Graw Hill
+ISBN: 978-9-35316-768-4
+
+Libros manuales-----------------------------:
+Título: Introducing Go
+Autor: Caleb Doxsey
+Año de publicación/versión: 2016
+Editorial: O'Reilly Media
+ISBN: 978-1-49194-195-9
+
+Título: Cómo programar en JAVA
+Autor: P.J. Deitel, H.M. Deitel
+Año de publicación/versión: 2007
+Editorial: Pearson Education 
+ISBN: 978-9-70261-190-5
+
+Título: Programming Perl
+Autor: Tom Christiansen, etal
+Año de publicación/versión: 2012
+Editorial: O'Reilly Media
+ISBN: 978-0-59600-492-7
+
+Título: Learning PHP, MySQL & JavaScript
+Autor: Robin Nixon
+Año de publicación/versión: 2018
+Editorial: O'Reilly Media
+ISBN: 978-1-49197-891-7
+
+Título: Programming Python
+Autor: Mark Lutz
+Año de publicación/versión: 2011
+Editorial: O'Reilly Media
+ISBN: 978-0-59615-810-1
+
+Título: The Ruby programming language
+Autor: David Flanagan & Yukihiro Matsomoto
+Año de publicación/versión: 2008
+Editorial: O'Reilly Media
+ISBN: 978-0-59651-617-8
+
+Libros digitales/ebooks------------------------:
+Título: Moon life
+Autor: Hank Fabian & Marlene Fabian Stiles
+Año de publicación/versión: 2021
+Editorial: Draft2Digital 
+ASIN: B09BPMVX44 
+
+Título: Artemis
+Autor: Andy Weir
+Año de publicación/versión: 2017
+Editorial: Penguin Random House
+ASIN: B076LCSGJW
+
+Título: Creativy Inc.
+Autor: Ed Catmull & Andy Wallace
+Año de publicación/versión: 2014
+Editorial: Penguin Random House
+ISBN: 9781448126286
+
+Título: Análisis de datos 
+Autor: Jordi Mas Elias
+Año de publicación/versión: 2020
+Editorial: UOC
+ISBN: 978-8-49180-758-2
+
+Título: Big Data
+Autor: Walter Sosa Escudero
+Año de publicación/versión: 2019
+Editorial: Siglo XXI Editores
+ASIN: B0821RMW81
+
+Título: Programa o serás programado
+Autor: Douglas Rushkoff
+Año de publicación/versión: 2021
+Editorial: DEBATE
+ASIN:  B084YS94G7
+
+Libros revistas----------------------------:
+Título: MIT Technology review Vol 124-5
+Autor: MIT
+Año de publicación/versión: 2021
+Editorial: MIT
+ISSN: 1099274-124-5
+
+Título: MIT Technology review Vol 124-1
+Autor: MIT
+Año de publicación/versión: 2021
+Editorial: MIT
+ISSN: 1099274-124-01
+
+Título: MIT Technology review Vol 117-4
+Autor: MIT
+Año de publicación/versión: 2014
+Editorial: MIT
+ISSN: 1099274-117-04
+
+Título: New Yorker Issue Vol 85-26
+Autor: The New Yorker
+Año de publicación/versión: 2014
+Editorial: Condé Nast Publication
+ISSN: 028792-085-26
+
+Título: Tecnológicas Vol 25-51
+Autor: ITM
+Año de publicación/versión: 2021
+Editorial: Institución Universitaria
+ISSN: 2256-5337
+
+Título: Trología Vol 13-25
+Autor: ITM
+Año de publicación/versión: 2021
+Editorial: Institución Universitaria
+ISSN: 2145-7778
+
+
+
+
+
+
+
+

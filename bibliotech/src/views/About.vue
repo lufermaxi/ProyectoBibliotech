@@ -117,4 +117,8 @@ export default {
 .news2-text{
     border: none !important;
 }
+.btn-secondary{
+    background-color: #485eb2 !important;
+    border: 1px solid #485eb2 !important;
+}
 </style>

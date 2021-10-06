@@ -91,5 +91,5 @@ Variaciones de transparencia:
 }
 
 .modal-backdrop{
-    background-color: #FFF;
+    background-color: #FFF !important;
 }
