@@ -1,26 +1,19 @@
-![Logo](/BibliotechWeb/assets/images/logo-minimal.png) 
+# bibliotech
 
-## Desarrollo de software - Ciclo 3 MISIONTIC
+## Project setup
+```
+npm install
+```
 
-Hola!
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-Este repositorio alojará el desarrollo de un servicio Web de prestamos para pequeñas bibliotecas o centros culturales comuntarios. 
+### Compiles and minifies for production
+```
+npm run build
+```
 
-Este recurso nace de la unión de varios saberes y voluntades.
-
-<br/>
-
-**[bibliotech.biz/](http://bibliotech.biz/)**
-
-<br/>
-
-Equipo de desarrollo:
-* [Andrés Felipe Alvarez](https://github.com/afar-cmyk)
-* [Esteban Castiblanco](https://github.com/Jesteban247)
-* [Luis Fernando Delgado](https://github.com/lufermaxi)
-* [Kelly Monroy Carrillo](https://github.com/muakarada)
-* [John Stiven Vasquez](https://github.com/jsstiven)
-> Buenas lecturas :)
-
-
-
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
