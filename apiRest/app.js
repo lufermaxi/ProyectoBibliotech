@@ -4,13 +4,24 @@ var cors = require('cors');
 var app = express();
 app.use(express.json());
 app.use(cors());
+app.use((req, res, next)=>{
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, ContentType, Accept");
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+    next();
+});
+
+const puerto = process.env.PORT || 3000;
+
 
 //conexion
 var conexion = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'bibliotech'
+    host: 'http://mysql-proyecto.alwaysdata.net',
+    user: 'proyecto',
+    password: 'ToBy456789RoGeR',
+    database: 'proyecto_bibliotech',
+    port: '3306'
 });
 
 conexion.connect(function(error){
@@ -18,7 +29,11 @@ conexion.connect(function(error){
         throw error;
     }else{
         console.log("conexion exitosa");
+        app.listen(puerto, function(){
+            console.log("servidor ok en puerto "+puerto );
+        });
     }
+
 });
 //conexion
 app.get('/', function(req, res){
@@ -179,8 +194,3 @@ app.delete('/api/articulos/:id', (req, res)=>{
 
 //------------------------------------------------------------articulos---------------------------------------
 
-const puerto = process.env.PORT || 3000;
-
-app.listen(puerto, function(){
-    console.log("servidor ok en puerto "+puerto );
-});
